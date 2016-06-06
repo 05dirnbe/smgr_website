@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for HTML5 (experimental) for Mac OS X https://github.com/w3c/tidy-html5/tree/c63cc39">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>NEFI: Network Extraction From Images</title><!-- Bootstrap -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/sticky_footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/blueimp-gallery.min.css">
+  <style>
+.col-xs-6 {
+            padding:20px;
+        }
+        .col-xs-6 img {
+            display:block;
+            margin:auto;
+            max-width:300px;
+            max-height:200px;
+            margin-bottom:20px;
+        }
+        .col-xs-6 img:hover {
+            border-color: #337ab7;
+            box-shadow: 0 0 10px #337ab7;
+        }
+        .col-xs-6 p {
+          text-align:center;
+        }
+  </style>
+</head>
+
+<body>
+  <!-- Static navbar -->
+
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=
+        "#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle
+        navigation</span></button> <span class="navbar-brand"><a href="/index.html">NEFI</a></span>
+      </div>
+
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="/gallery.html">Gallery</a>
+          </li>
+
+          <li class="active">
+            <a href="/guide.html">Guide</a>
+          </li>
+
+          <li class="active">
+            <a href="/download.html">Download</a>
+          </li>
+
+          <li class="active">
+            <a href="/credits.html">Acknowledgments</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="page-header">Example Gallery—Formation of crack patterns<br>
+        <small>Click for larger size</small></h1>
+      </div>
+    </div>
+
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <div class="slides"></div>
+
+      <h3 class="title"></h3><a class="prev">‹</a> <a class="next">›</a> <a class="close">×</a>
+      <a class="play-pause"></a>
+
+      <ol class="indicator"></ol>
+    </div>
+
+    <div id="links">
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="/images/examples/cracks/large/input.jpeg" title="Original input image"><img class=
+          "img-responsive" src="/images/examples/cracks/small/input.jpeg" alt="Input image"></a>
+
+          <p>An image of a network of cracks. It serves as NEFI's
+          input image.</p>
+        </div>
+
+        <div class="col-xs-6">
+          <a href="/images/examples/cracks/large/segmented.jpeg" title=
+          "Segmented image"><img class="img-responsive" src=
+          "/images/examples/cracks/small/segmented.jpeg" alt="Segmented image"></a>
+
+          <p>The segmented version of the input image.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="/images/examples/cracks/large/skeleton.jpeg" title="Skeleton"><img class=
+          "img-responsive" src="/images/examples/cracks/small/skeleton.jpeg" alt=
+          "Skeleton image"></a>
+
+          <p>The skeleton of the segmented image.</p>
+        </div>
+
+        <div class="col-xs-6">
+          <a href="/images/examples/cracks/large/full_graph.jpeg" title=
+          "Unfiltered graph"><img class="img-responsive" src=
+          "/images/examples/cracks/small/full_graph.jpeg" alt="Graph full"></a>
+
+          <p>The unfiltered detected graph.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6">
+          <a href="/images/examples/cracks/large/largest_component.jpeg" title=
+          "Largest connected component filter"><img class="img-responsive" src=
+          "/images/examples/cracks/small/largest_component.jpeg" alt=
+          "Largest connected component"></a>
+
+          <p>The graph filtered such that only the largest connected component remains.</p>
+        </div>
+
+        <div class="col-xs-6">
+          <a href="/images/examples/cracks/large/simple_cycles.jpeg" title=
+          "Simple cycle filter"><img class="img-responsive" src=
+          "/images/examples/cracks/small/simple_cycles.jpeg" alt="Simple cycles"></a>
+
+          <p>The graph filtered such that only edges belonging to at least one simple cylce remain.
+          I.e. dead ends are thrown away.</p>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <a href="/images/examples/cracks/large/smoothed_graph.jpeg" title=
+            "Degree 2 nodes smoothing filter"><img class="img-responsive" src=
+            "/images/examples/cracks/small/smoothed_graph.jpeg" alt="Smoothed graph"></a>
+
+            <p>The graph filtered such that nodes of degree 2 are smoothed. I.e. the two neighbours are
+            directly connected and the node in the middle is discarded.</p>
+          </div>
+        </div>
+
+    </div>
+
+        
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <a href="http://www.mpi-inf.mpg.de/departments/algorithms-complexity/"><img height="50" src=
+      "/images/mpilogo-inf-wide.png" alt="mpi logo"></a>
+
+      <div style="float:right">
+        <p class="small"><a href="http://www.mpi-inf.mpg.de/imprint/">Imprint</a></p>
+      </div>
+    </div>
+  </footer><script src="../js/blueimp-gallery.min.js">
+</script> <script>
+document.getElementById('links').onclick = function (event) {
+            event = event || window.event;
+            var target = event.target || event.srcElement,
+                link = target.src ? target.parentNode : target,
+                options = {index: link, event: event},
+                links = this.getElementsByTagName('a');
+            blueimp.Gallery(links, options);
+        };
+  </script>
+</body>
+</html>
