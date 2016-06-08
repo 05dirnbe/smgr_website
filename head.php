@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+
 <head>
   <meta name="generator" content=
   "HTML Tidy for HTML5 (experimental) for Mac OS X https://github.com/w3c/tidy-html5/tree/c63cc39">
@@ -11,6 +11,9 @@
   <title>SMGR: Slime Mold Graph Repository</title><!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/sticky_footer.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link href="css/expandy.css" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -19,77 +22,42 @@
     <![endif]-->
 </head>
 
-<body>
-  <!-- Static navbar -->
-
   <nav class="navbar navbar-default navbar-static-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=
         "#navbar" aria-expanded="false" aria-controls="navbar"><span class="sr-only">Toggle
-        navigation</span></button> <span class="navbar-brand"><a href="index.html">SMGR</a></span>
+        navigation</span></button> <span class="navbar-brand"><a href="index.php">SMGR</a></span>
       </div>
 
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active">
-            <a href="mission.html">Mission</a>
+            <a href="mission.php">Mission</a>
           </li>
 
           <li class="active">
-            <a href="data.html">Data sets</a>
+            <a href="data.php">Data sets</a>
           </li>
 
           <li class="active">
-            <a href="contributors.html">Contributors</a>
+            <a href="contributors.php">Contributors</a>
           </li>
 
           <li class="active">
-            <a href="faq.html">FAQ</a>
+            <a href="faq.php">FAQ</a>
           </li>
 
           <li class="active">
-            <a href="credits.html">Acknowledgments</a>
+            <a href="credits.php">Acknowledgments</a>
           </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
           <li class="active">
-            <a href="contact.html">Contact</a>
+            <a href="contact.php">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <div class="container">
-    <h1>Contact</h1>
-
-    <p>The SMGR is curated by <a href="http://mpi-inf.mpg.de/~mtd">Michael Dirnberger</a> at the Max Planck Institute
-    for Informatics.</p>
-
-    <h2>Mailing list</h2>
-
-    <p>You can sign up for our mailing list on <a href=
-    "https://lists.mpi-inf.mpg.de/listinfo/smgr">this website</a>. This way you'll be notified when
-    new data is added to the repository.</p>
-
-    <p>You can also direct any questions and problems to this mailing list.</p>
-  </div><!-- /container -->
-
-  <footer class="footer">
-    <div class="container">
-      <a href="http://www.mpi-inf.mpg.de/departments/algorithms-complexity/"><img height="50" src=
-      "/images/mpilogo-inf-wide.png" alt="mpi logo"></a>
-
-      <div style="float:right">
-        <p class="small"><a href="http://www.mpi-inf.mpg.de/imprint/">Imprint</a></p>
-      </div>
-    </div>
-  </footer><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-</script> <!-- Include all compiled plugins (below), or include individual files as needed -->
-   <script src="js/bootstrap.min.js">
-</script>
-</body>
-</html>
