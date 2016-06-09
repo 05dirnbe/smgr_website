@@ -9,20 +9,31 @@
   <div class="container">
     <!-- Main component for a primary marketing message or call to action -->
 
-  
+  <p>
     <h1>Our Mission</h1>
+  </p>
+  <p>
+      Slime molds such as P. polycephalum that form impressive networks have proven to be an exciting substrate for interdisciplinary research. The study of the
+      structure and function of theses organism's intricate vein-networks has captured the interest of biologists, physicists and computer scientists alike.
+  </p>
+  <p>
+      A popular two-step approach consists of capturing images of slime mold networks and converting them to mathematical graphs enabling a detailed
+      investigation of their properties. The first part relies on cultivating specimen in the lab whilst taking images documenting the development of their
+      networks. Obtaining such series of images is a process, which needs to be repeated many times in order to obtain a reliable body of observations.
+      Naturally, such data acquisition comes at a considerable cost in terms of time and resources.
+  </p>
+  <p>
+      In the past such "graph-based" approaches have been quite successful and various interesting results are readily available online. However, the data used
+      to establish these results, i.e. graphs and their underlying images, is not nearly as available and remains overlooked in most cases. This is most
+      unfortunate because due to their ease of handling and their abstraction power, graphs naturally lend themselves to reuse, potentially gaining impact beyond
+      their initial publications or even beyond their domain of origin.
+  </p>
+  <p>
+      To encourage and facilitate the reuse of experimental data we start the Slime Mold Graph Repository, providing a central location for research-grade data
+      revolving around network-forming slime molds. We believe that cultivating a small but dedicated data repository is one way to enable the research community
+      to make the most of their hard-earned data. After all … sharing is caring.
+  </p>
 
-    <p>We seek to establish a repository to provide a central location for research-grade data and links revolving around, but not limited to, network-forming slime molds. While many outstanding publications on the topic are easily accessed online, the visibility and the attributed importance of underlying raw data-sets remains poor in many cases. We believe that cultivating dedicated data repositories is one way to improve the situation by furthering the exchange and reuse of hard-earned data-sets.</p> 
-
-    <p>We can start a repository by adding our own data, but we know that for this repository to grow and be of continued usefulness, a community effort is required. For this reason we invite everyone to think about contributing in some way or another. We are grateful for any suggestions and would love to hear from you. Simply <a href="contact.html">contact</a> us.</p>
-
-    <h1>Our Personal Motivation</h1>
-
-    <p>Slime molds such as P. polycephalum that form impressive networks, have proven to be an exciting substrate for interdisciplinary research. The study of the structure and function of theses organism's intricate vein-networks has captured the interest of biologists, physicists and computer scientists in particular.</p> 
-
-    <p>Some recent results rely on the generic three-stage research approach consists of <strong>data acquisition</strong>, <strong>data processing</strong> and <strong>data analysis</strong>. Data acquisition includes the preparation and execution of a sufficient number of wet-lab experiments, designed such that large slime mold networks form with high probability. A series of high quality digital images of the growing slime mold constitutes the raw data. Converting the raw data into a series of mathematical graphs has been proposed as a novel data processing step. I.e., for each image of P. polycephalum a corresponding weighted planar graph is computed. Subsequently, powerful methods from graph theory and network science can be used to drive data analysis. All three mentioned stages are challenging as they require special resources and expert knowledge. Data acquisition and processing in particular, may quickly become serious obstacles deterring interested researchers from starting to work on P. polycephalum.
-
-    <p>Our aim is to help remove these obstacles by making data available to people who do not know the right individuals to gain access to data or do not have the required resources to do their own experiments. Furthermore, we believe that increasing the visibility of the data underlying some result as opposed of increasing the visibility of the result itself, increase the value of countless ours spent by researchers conducting experiments on slime molds in labs or people thinking about algorithms that help process experimental data.</p>
   </div>
 
 
