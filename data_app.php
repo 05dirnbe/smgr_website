@@ -286,19 +286,7 @@ if(isset($_GET['operation'])) {
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
 		<script>
-		
-		
-		$(function () {
-		  $("#plugins1").jstree({
-			"checkbox" : {
-			  "keep_selected_style" : false,
-			  "whole_node" : false,
-			  "visible": false
-			},
-			"plugins" : [ "checkbox" ]
-		  });
-		});
-		
+				
 		$(function () {
 			$(window).resize(function () {
 				var h = Math.max($(window).height() - 0, 420);
@@ -321,7 +309,6 @@ if(isset($_GET['operation'])) {
 						        alert("Data: " + data + "\nStatus: " + status);
 					 });
 			})
-			
 			$('#tree')
 				.jstree({
 					'core' : {
@@ -391,7 +378,10 @@ if(isset($_GET['operation'])) {
 							return name + ' ' + counter;
 						}
 					},
-					'plugins' : ['state','dnd','sort','types','contextmenu','unique', "checkbox", "search"]
+					'checkbox' : {
+                        'whole_node' : false
+                    },
+                    'plugins' : ['state','dnd','sort','types','contextmenu','unique', "checkbox", "search"]
 				})
 				.on('delete_node.jstree', function (e, data) {
 					$.get('?operation=delete_node', { 'id' : data.node.id })
