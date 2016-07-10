@@ -303,13 +303,16 @@ if(isset($_GET['operation'])) {
 				$('#container, #data, #tree, #data .content').height(h).filter('.default').css('lineHeight', h + 'px');
 			}).resize();
 
-			$("#download-btn").click(function(){				
-				var paths = $('#tree').jstree('get_selected')
-				console.log(paths)
-				
-				$.post(
-					"zip_download.php", 
-					{paths:paths});
+			$("#download-btn")
+				.click(function(){				
+					var paths = $('#tree').jstree('get_selected');
+					console.log(paths);
+					
+					$.post(
+						"zip_download.php", 
+						{paths:paths}
+						);
+			})
 			
 			$('#tree')
 				.jstree({
