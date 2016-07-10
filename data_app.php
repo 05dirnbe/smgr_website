@@ -235,6 +235,8 @@ if(isset($_GET['operation'])) {
 		<title>Title</title>
 		<meta name="viewport" content="width=device-width" />
 		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/themes/default/style.min.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 		<style>
 		html, body { background:#ebebeb; font-size:10px; font-family:Verdana; margin:0; padding:0; }
 		#container { min-width:320px; margin:0px auto 0 auto; background:white; border-radius:0px; padding:0px; overflow:hidden; }
@@ -270,6 +272,7 @@ if(isset($_GET['operation'])) {
 		</style>
 	</head>
 	<body>
+		<button type="button" class="btn btn-default" id="download-btn">Download</button>
 		<div id="container" role="main">
 			<div id="tree"></div>
 			<div id="data">
@@ -284,6 +287,7 @@ if(isset($_GET['operation'])) {
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
 		<script>
 		
+		
 		$(function () {
 		  $("#plugins1").jstree({
 			"checkbox" : {
@@ -292,12 +296,21 @@ if(isset($_GET['operation'])) {
 			"plugins" : [ "checkbox" ]
 		  });
 		});
+		
 		$(function () {
 			$(window).resize(function () {
 				var h = Math.max($(window).height() - 0, 420);
 				$('#container, #data, #tree, #data .content').height(h).filter('.default').css('lineHeight', h + 'px');
 			}).resize();
 
+			$("#download-btn").click(function(){				
+				var paths = $('#tree').jstree('get_selected')
+				console.log(paths)
+				
+				$.post(
+					"zip_download.php", 
+					{paths:paths});
+			
 			$('#tree')
 				.jstree({
 					'core' : {
