@@ -308,12 +308,18 @@ if(isset($_GET['operation'])) {
 			$("#download-btn")
 				.click(function(){				
 					var paths = $('#tree').jstree('get_selected');
+
+					var paths = paths.map(function (i){
+					    return 'data/' + i;
+					})
 					console.log(paths);
-					
+
 					$.post(
 						"zip_download.php", 
-						{paths:paths}
-						);
+						{files:files},
+						function(data, status){
+						        alert("Data: " + data + "\nStatus: " + status);
+					 });
 			})
 			
 			$('#tree')

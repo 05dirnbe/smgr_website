@@ -1,15 +1,7 @@
 <?php
-if($_POST["paths"])
+if($_POST["files"])
 {
-	<script>alert("Danke für die Bestellung...") </script>
-	$file_prefix = "data/";
-
-	$paths = $_POST["paths"];
-	$files = []
-
-	foreach($paths AS $path) {
-		array_push($files, $file_prefix . $path);
-	}
+	$files = $_POST["files"];
 
 	$zipname = 'download.zip';
 	$zip = new ZipArchive;
