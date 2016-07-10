@@ -291,7 +291,9 @@ if(isset($_GET['operation'])) {
 		$(function () {
 		  $("#plugins1").jstree({
 			"checkbox" : {
-			  "keep_selected_style" : false
+			  "keep_selected_style" : false,
+			  "whole_node" : false,
+			  "visible": false
 			},
 			"plugins" : [ "checkbox" ]
 		  });
