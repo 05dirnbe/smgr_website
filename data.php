@@ -3,7 +3,7 @@ ini_set('open_basedir', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 
 class fs
 {
-	protected $base = 'data_sets/';
+	protected $base = null;
 
 	protected function real($path) {
 		$temp = realpath($path);
@@ -234,13 +234,13 @@ if(isset($_GET['operation'])) {
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Title</title>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" href="jstree/dist/themes/default/style.min.css" />
+		<link rel="stylesheet" href="./jstree/dist/themes/default/style.min.css" />
 		<style>
 		html, body { background:#ebebeb; font-size:10px; font-family:Verdana; margin:0; padding:0; }
 		#container { min-width:320px; margin:0px auto 0 auto; background:white; border-radius:0px; padding:0px; overflow:hidden; }
 		#tree { float:left; min-width:319px; border-right:1px solid silver; overflow:auto; padding:0px 0; }
 		#data { margin-left:320px; }
-		#data textarea { margin:0; padding:0; height:100%; width:100%; border:0; background:white; display:block; line-height:18px; resize:none; }
+		#data textarea { margin:0; padding:0; height:600px; width:100%; border:0; background:white; display:block; line-height:18px; resize:none; }
 		#data, #code { font: normal normal normal 12px/18px 'Consolas', monospace !important; }
 
 		#tree .folder { background:url('jstree/filebrowser/file_sprite.png') right bottom no-repeat; }
@@ -282,7 +282,7 @@ if(isset($_GET['operation'])) {
 		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="jstree/dist/jstree.min.js"></script>
+		<script src="./jstree/dist/jstree.min.js"></script>
 		<script>
 		$(function () {
 			$(window).resize(function () {
