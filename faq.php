@@ -2,7 +2,7 @@
 
 <html lang="en">
 
-<? include('head.php'); ?>
+<?php include('head.php'); ?>
 
 <body>
 
@@ -186,6 +186,6 @@
             indicator: 'triangle'
         });
     </script>
-  <? include('footer.php'); ?>
+  <?php include('footer.php'); ?>
 </body>
 </html>

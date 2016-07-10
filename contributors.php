@@ -2,7 +2,7 @@
 
 <html lang="en">
 
-<? include('head.php'); ?>
+<?php include('head.php'); ?>
 
 <body>
 
@@ -56,6 +56,6 @@
   </div>
 
   
-  <? include('footer.php'); ?>
+  <?php include('footer.php'); ?>
 </body>
 </html>

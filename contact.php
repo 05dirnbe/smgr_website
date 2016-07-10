@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<? include('head.php'); ?>
+<?php include('head.php'); ?>
 
 <body>
   <!-- Static navbar -->
@@ -21,6 +21,6 @@
     <p>You can also direct any questions and problems to this mailing list.</p>
   </div><!-- /container -->
 
-  <? include('footer.php'); ?>
+  <?php include('footer.php'); ?>
 </body>
 </html>
