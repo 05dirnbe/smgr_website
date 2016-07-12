@@ -272,8 +272,11 @@ if(isset($_GET['operation'])) {
 		</style>
 	</head>
 	<body>
-		<button type="button" class="btn btn-default" id="download-btn">Download</button>
-		<div id="container" role="main">
+			<div style="padding-top:5px; padding-bottom:5px; padding-left:5px;">
+				<button type="button" class="btn btn-default" id="download-btn" style="display:block; float:left; margin-right:5px;">Download</button>
+				<input class="form-control search-input" placeholder="Search" name="srch-term" style="width:215px; " type="text">
+			</div>
+		
 			<div id="tree"></div>
 			<div id="data">
 				<div class="content code" style="display:none;"><textarea id="code" readonly="readonly"></textarea></div>
@@ -286,8 +289,18 @@ if(isset($_GET['operation'])) {
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
 		<script>
-				
+	
+
 		$(function () {
+
+			$(".search-input").keyup(function() {
+
+		        var searchString = $(this).val();
+		        console.log(searchString);
+		        $('#data').jstree('search', searchString);
+		    });
+
+
 			$(window).resize(function () {
 				var h = Math.max($(window).height() - 0, 420);
 				$('#container, #data, #tree, #data .content').height(h).filter('.default').css('lineHeight', h + 'px');
@@ -381,6 +394,10 @@ if(isset($_GET['operation'])) {
 					'checkbox' : {
                         'whole_node' : false
                     },
+                    "search": {
+			            "case_insensitive": true,
+			            "show_only_matches" : true
+			        },
                     'plugins' : ['state','dnd','sort','types','contextmenu','unique', "checkbox", "search"]
 				})
 				.on('delete_node.jstree', function (e, data) {
@@ -427,6 +444,7 @@ if(isset($_GET['operation'])) {
 							data.instance.refresh();
 						});
 				})
+
 				.on('changed.jstree', function (e, data) {
 					if(data && data.selected && data.selected.length) {
 						$.get('?operation=get_content&id=' + data.selected.join(':'), function (d) {
