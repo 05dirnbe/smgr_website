@@ -298,15 +298,15 @@ if(isset($_GET['operation'])) {
 					var paths = $('#tree').jstree('get_selected');
 
 					var paths = paths.map(function (i){
-					    return 'data/' + i;
+					    return 'data/root/' + i;
 					})
 					console.log(paths);
 
 					$.post(
 						"zip_download.php", 
-						{files:files},
+						{files:paths},
 						function(data, status){
-						        alert("Data: " + data + "\nStatus: " + status);
+						        //alert("Data: " + data + "\nStatus: " + status);						        
 					 });
 			})
 			$('#tree')
