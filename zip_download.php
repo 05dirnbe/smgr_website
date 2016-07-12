@@ -3,7 +3,7 @@ if($_POST["files"])
 {
 	$files = $_POST["files"];
 
-	$zipname = 'download.zip';
+	$zipname = 'downloads/download.zip';
 	$zip = new ZipArchive;
 	$zip->open($zipname, ZipArchive::CREATE);
 	foreach ($files as $file) {
@@ -13,11 +13,9 @@ if($_POST["files"])
 	$zip->close();
 
 	header("Content-Disposition: attachment; filename=\"" . basename($zipname) . "\"");
-    header("Content-Type: application/force-download");
-    header("Content-Length: " . filesize($zipname));
-    header("Connection: close");      
-	
-	
-	
+    	header("Content-Type: application/force-download");
+    	header("Content-Length: " . filesize($zipname));
+    	header("Connection: close");      
+		
 }
 ?>
