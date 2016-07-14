@@ -1,4 +1,6 @@
 <?php
+
+phpinfo();
 if($_POST["files"])
 {
 	$files = $_POST["files"];

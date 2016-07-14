@@ -47,7 +47,7 @@
       </div>
     </div><!-- row -->
   </div>
-  
+  <div class="spacer-huge"/>
   <?php include('footer.php'); ?>
 </body>
 </html>
