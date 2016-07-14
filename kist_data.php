@@ -108,7 +108,7 @@
 
   <div>
 
-
+    <div class="spacer-huge"/>
   <footer class="footer">
     <div class="container">
       <a href="http://www.mpi-inf.mpg.de/departments/algorithms-complexity/"><img height="50" src=

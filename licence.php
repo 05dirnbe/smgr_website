@@ -83,6 +83,8 @@
     OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
     POSSIBILITY OF SUCH DAMAGE.</p>
   </div>
+
+  <div class="spacer-huge"/>
     <footer class="footer">
     <div class="container">
       <a href="http://www.mpi-inf.mpg.de/departments/algorithms-complexity/"><img height="50" src=

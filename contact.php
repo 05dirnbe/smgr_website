@@ -20,7 +20,7 @@
 
     <p>You can also direct any questions and problems to this mailing list.</p>
   </div><!-- /container -->
-
+  <div class="spacer-huge"/>
   <?php include('footer.php'); ?>
 </body>
 </html>

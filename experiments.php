@@ -140,6 +140,7 @@
         <p class="small"><a href="http://www.mpi-inf.mpg.de/imprint/">Imprint</a></p>
       </div>
     </div>
+    <div class="spacer-huge"/>
   </footer><!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 </script> <!-- Include all compiled plugins (below), or include individual files as needed -->

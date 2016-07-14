@@ -53,7 +53,7 @@
     <div>Icons made by Situ Herrera, Appzgear, Freepik, Google from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
   </p>
   </div><!-- /container -->
-
+  <div class="spacer-huge"/>
   <?php include('footer.php'); ?>
 </body>
 </html>
