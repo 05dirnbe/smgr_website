@@ -275,7 +275,7 @@ if(isset($_GET['operation'])) {
 			<div style="padding-top:5px; padding-bottom:5px; padding-left:5px;">
 				<button type="button" class="btn btn-default" id="download-btn" style="display:block; float:left; margin-right:5px;">Download</button>
                 <iframe id="frame1" style="display:none"></iframe>
-                <a href="javascript:populateIframe('frame1','<?php echo "./downloads/"; ?>')">download</a>
+                <a href="javascript:populateIframe('frame1','<?php echo "download.zip"; ?>')">download</a>
 				<input class="form-control search-input" placeholder="Search" name="srch-term" style="width:215px; " type="text">
 			</div>
 		
