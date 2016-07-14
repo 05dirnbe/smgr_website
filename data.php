@@ -1,5 +1,6 @@
 <?php include("head.php"); ?>
-<iframe id="filebrowser" src="data_app.php" height="875px" width="100%" scrolling="no" marginheight="0px" frameborder="0" style="margin-top:-20px;"></iframe>
+<iframe id="filebrowser" src="data_app.php" height="875px" width="100%" scrolling="no"
+        marginheight="0px" frameborder="0" style="margin-top:-20px;"></iframe>
 <?php include("footer.php"); ?>
 
 <script>
@@ -8,11 +9,6 @@
         var headerHeight = document.getElementById("header").offsetHeight;
         var viewportHeight = window.innerHeight;
         var filebrowserHeight = viewportHeight - headerHeight - footerHeight - 5;
-        console.log("filebrowser should be: " + filebrowserHeight);
-        console.log("footer was: " + footerHeight);
-        console.log("header was: " + headerHeight);
-        console.log("viewport was: " + viewportHeight);
-
         var filebrowser = document.getElementById("filebrowser");
         filebrowser.style.height = filebrowserHeight + "px";
     });
