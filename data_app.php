@@ -274,6 +274,8 @@ if(isset($_GET['operation'])) {
 	<body>
 			<div style="padding-top:5px; padding-bottom:5px; padding-left:5px;">
 				<button type="button" class="btn btn-default" id="download-btn" style="display:block; float:left; margin-right:5px;">Download</button>
+                <iframe id="frame1" style="display:none"></iframe>
+                <a href="javascript:populateIframe('frame1','<?php echo "./downloads/"; ?>')">download</a>
 				<input class="form-control search-input" placeholder="Search" name="srch-term" style="width:215px; " type="text">
 			</div>
 		
@@ -288,7 +290,14 @@ if(isset($_GET['operation'])) {
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
-		<script>
+		<script type="text/javascript">
+        function populateIframe(id,path) 
+        {
+            var ifrm = document.getElementById(id);
+            ifrm.src = "download.php?path="+path;
+        }
+        </script>
+        <script>
 	
 
 		$(function () {
@@ -321,6 +330,7 @@ if(isset($_GET['operation'])) {
 						function(data, status){
 						        //alert("Data: " + data + "\nStatus: " + status);						        
 					 });
+                                          
 			})
 			$('#tree')
 				.jstree({

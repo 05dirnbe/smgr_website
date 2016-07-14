@@ -11,11 +11,6 @@ if($_POST["files"])
             $zip->addFile($file);
 	}
 	$zip->close();
-
-	header("Content-Disposition: attachment; filename=\"" . basename($zipname) . "\"");
-    	header("Content-Type: application/force-download");
-    	header("Content-Length: " . filesize($zipname));
-    	header("Connection: close");      
-		
+	
 }
 ?>
