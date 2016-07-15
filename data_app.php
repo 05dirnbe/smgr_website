@@ -291,14 +291,41 @@ if(isset($_GET['operation'])) {
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
 		<script type="text/javascript">
-        function populateIframe(id,path) 
-        {
-            var ifrm = document.getElementById(id);
-            ifrm.src = "download.php?path="+path;
+        function populateIframe1(id,path) 
+        {                                              
+            var ifrm = document.getElementById("frame1");
+            ifrm.src = "download.php?path=";
+            //ifrm.src = "download.php?path="+path;
         }
         </script>
         <script>
-	
+        
+        function populateIframe(id,path) { 
+            
+				
+					var paths = $('#tree').jstree('get_selected');
+
+					var paths = paths.map(function (i){
+					    return 'data/root/' + i;
+					})
+					console.log(paths);
+                     
+                    
+                          
+					$.post(
+						"zip_download.php", 
+						{files:paths},
+						function(data, status){
+						    var ifrm = document.getElementById("frame1");
+                            ifrm.src = "download.php?path=";						        
+					 });
+                                          
+   
+            
+            //var ifrm = document.getElementById("frame1");
+            //ifrm.src = "download.php?path=";
+            //ifrm.src = "download.php?path="+path;
+        }
 
 		$(function () {
 
@@ -314,6 +341,7 @@ if(isset($_GET['operation'])) {
 				var h = Math.max($(window).height() - 0, 420);
 				$('#container, #data, #tree, #data .content').height(h).filter('.default').css('lineHeight', h + 'px');
 			}).resize();
+            
 
 			$("#download-btn")
 				.click(function(){				
@@ -323,7 +351,9 @@ if(isset($_GET['operation'])) {
 					    return 'data/root/' + i;
 					})
 					console.log(paths);
-
+                     
+                    
+                          
 					$.post(
 						"zip_download.php", 
 						{files:paths},
