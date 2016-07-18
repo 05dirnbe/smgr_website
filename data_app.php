@@ -274,7 +274,8 @@ if(isset($_GET['operation'])) {
 	<body>
 			<div style="padding-top:5px; padding-bottom:5px; padding-left:5px;">
 				<!-- <button type="button" class="btn btn-default" id="download-btn" style="display:block; float:left; margin-right:5px;">Download</button> -->
-                <input class="form-control search-input" placeholder="Search" name="srch-term" style="width:215px; " type="text">
+                <input type="text" id="plugins4_q" value="" placeholder="Search" class="input" display:block; padding:4px; border-radius:4px; border:1px solid silver;">
+                <!--<input class="form-control search-input" placeholder="Search" name="srch-term" style="width:215px; " type="text"> -->
                 <iframe id="frame1" style="display:none"></iframe>
                 <a href="javascript:populateIframe('frame1','<?php echo "download.zip"; ?>')">Download Selected Files</a>
 			</div>
@@ -302,12 +303,17 @@ if(isset($_GET['operation'])) {
         
         function populateIframe(id,path) { 
             
-				
-					var paths = $('#tree').jstree('get_selected');
+                    var paths = $('#tree').jstree(true).get_selected(false);
+					//var paths = $('#tree').jstree('get_selected');
 
 					var paths = paths.map(function (i){
 					    return 'data/root/' + i;
 					})
+                    
+                   
+                    if (paths.length < 1) {
+                      return;
+                    }
 					console.log(paths);
                      
                     
@@ -328,7 +334,19 @@ if(isset($_GET['operation'])) {
         }
 
 		$(function () {
-
+    
+             $("#plugins4").jstree({
+                "plugins" : [ "search" ]
+              });
+              var to = false;
+              $('#plugins4_q').keyup(function () {
+                if(to) { clearTimeout(to); }
+                to = setTimeout(function () {
+                  var v = $('#plugins4_q').val();
+                  $('#plugins4').jstree(true).search(v);
+                }, 250);
+              });
+    
 			$(".search-input").keyup(function() {
 
 		        var searchString = $(this).val();
@@ -379,6 +397,7 @@ if(isset($_GET['operation'])) {
 							return true;
 						},
 						'force_text' : true,
+                        'expand_selected_onload' : true,
 						'themes' : {
 							'responsive' : false,
 							'variant' : 'small',
@@ -435,7 +454,7 @@ if(isset($_GET['operation'])) {
                         'whole_node' : false
                     },
                     "search": {
-			            "case_insensitive": true,
+			            "case_insensitive": false,
 			            "show_only_matches" : true
 			        },
                     'plugins' : ['state','dnd','sort','types','contextmenu','unique', "checkbox", "search"]
@@ -484,7 +503,9 @@ if(isset($_GET['operation'])) {
 							data.instance.refresh();
 						});
 				})
-
+                .on('select_node.jstree', function (e, data) {
+                    console.log("vl");
+                })
 				.on('changed.jstree', function (e, data) {
 					if(data && data.selected && data.selected.length) {
 						$.get('?operation=get_content&id=' + data.selected.join(':'), function (d) {
