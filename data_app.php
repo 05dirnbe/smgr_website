@@ -291,14 +291,6 @@ if(isset($_GET['operation'])) {
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
-		<script type="text/javascript">
-        function populateIframe1(id,path) 
-        {                                              
-            var ifrm = document.getElementById("frame1");
-            ifrm.src = "download.php?path=";
-            //ifrm.src = "download.php?path="+path;
-        }
-        </script>
         <script>
         
         function populateIframe(id,path) { 
@@ -339,7 +331,7 @@ if(isset($_GET['operation'])) {
                 "plugins" : [ "search" ]
               });
               var to = false;
-              $('#plugins4_q').keyup(function () {
+              $('#plugins4').keyup(function () {
                 if(to) { clearTimeout(to); }
                 to = setTimeout(function () {
                   var v = $('#plugins4_q').val();
@@ -347,14 +339,6 @@ if(isset($_GET['operation'])) {
                 }, 250);
               });
     
-			$(".search-input").keyup(function() {
-
-		        var searchString = $(this).val();
-		        console.log(searchString);
-		        $('#data').jstree('search', searchString);
-		    });
-
-
 			$(window).resize(function () {
 				var h = Math.max($(window).height() - 0, 420);
 				$('#container, #data, #tree, #data .content').height(h).filter('.default').css('lineHeight', h + 'px');
@@ -397,6 +381,8 @@ if(isset($_GET['operation'])) {
 							return true;
 						},
 						'force_text' : true,
+                        'open_parents': true,
+                        'load_open': true,
                         'expand_selected_onload' : true,
 						'themes' : {
 							'responsive' : false,
@@ -457,7 +443,7 @@ if(isset($_GET['operation'])) {
 			            "case_insensitive": false,
 			            "show_only_matches" : true
 			        },
-                    'plugins' : ['state','dnd','sort','types','contextmenu','unique', "checkbox", "search"]
+                    'plugins' : ['state','dnd','sort','types','unique', "checkbox", "search"]
 				})
 				.on('delete_node.jstree', function (e, data) {
 					$.get('?operation=delete_node', { 'id' : data.node.id })
@@ -504,7 +490,12 @@ if(isset($_GET['operation'])) {
 						});
 				})
                 .on('select_node.jstree', function (e, data) {
-                    console.log("vl");
+                    
+                    data.instance.open_all(data.node);
+                })
+                .on('deselect_node.jstree', function (e, data) {
+
+                    data.instance.close_all(data.node);
                 })
 				.on('changed.jstree', function (e, data) {
 					if(data && data.selected && data.selected.length) {
