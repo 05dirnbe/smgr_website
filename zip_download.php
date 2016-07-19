@@ -4,6 +4,8 @@ include 'ChromePhp.php';
 define("UPPER_BOUND", 6, true);
 define("EXPERATION_BOUND", 24, true);
 
+$white_list = ['data/root'];
+
 $old_files = array();
 
 if ($handle = opendir('/downloads')){
@@ -41,9 +43,6 @@ if ($handle = opendir('/downloads')){
     }
 }
 
-
-
-
 ChromePhp::log("Start ziping");
 
 $files = $_POST["files"];
@@ -52,6 +51,18 @@ $substring_length = strlen("data/root/");
 ChromePhp::log("Save zip as " .$filename);
 ChromePhp::log("Got file list");
 ChromePhp::log($files);
+
+foreach ($files as $file) {
+    $is_valid = false;
+    foreach ($white_list as $valid){
+        if(substr(realpath($file), 0, count($valid)) == $valid){
+            $is_valid = true;
+        }
+    }
+    if(!$is_valid){
+        exit('you tried to download an illegal resource' + $file);
+    }
+}
 
 $zipname = 'downloads/' .$filename. '.zip';
 $zip = new ZipArchive;
