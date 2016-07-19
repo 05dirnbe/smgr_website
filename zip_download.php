@@ -55,7 +55,7 @@ ChromePhp::log($files);
 foreach ($files as $file) {
     $is_valid = false;
     foreach ($white_list as $valid){
-        if(substr(realpath($file), 0, count($valid)) == $valid){
+        if(substr(realpath($file), 0, count($valid) - 1) == $valid){
             $is_valid = true;
         }
     }
