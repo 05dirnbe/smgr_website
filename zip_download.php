@@ -25,12 +25,12 @@ if ($handle = opendir('/downloads')){
     foreach ($old_files as $cur_file) {
         if(filemtime($cur_file) < $experation_date) {
             unlink($cur_file);
-            $del_array.array_push($cur_file);
+            array_push($del_array, $cur_file);
         }
     }
 
     foreach ($del_array as $del_file){
-        $key = array_search($del_file);
+        $key = array_search($del_file, $old_files);
         unset($old_files[$key]);
     }
 
@@ -60,7 +60,7 @@ foreach ($files as $file) {
         }
     }
     if(!$is_valid){
-        exit('you tried to download an illegal resource' + $file);
+        exit('you tried to download an illegal resource' . $file);
     }
 }
 
