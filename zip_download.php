@@ -70,6 +70,4 @@ foreach ($files as $file) {
 
 $zip->close();
 ChromePhp::log('Finished ziping');
-    
-
 ?>
