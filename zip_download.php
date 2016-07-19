@@ -4,12 +4,16 @@ include 'ChromePhp.php';
 ChromePhp::log("Start ziping");
 
 $files = $_POST["files"];
+$filename = $_POST["filename"];
+$substring_length = strlen("data/root/");
+ChromePhp::log("Save zip as " .$filename);
 ChromePhp::log("Got file list");
 ChromePhp::log($files);
 
-$zipname = 'downloads/download.zip';
+$zipname = 'downloads/' .$filename. '.zip';
 $zip = new ZipArchive;
 $zip->open($zipname, ZipArchive::CREATE|ZipArchive::OVERWRITE);
+
 
 foreach ($files as $file) {
     if (is_dir($file)) {
@@ -17,7 +21,7 @@ foreach ($files as $file) {
     }
     else{
         ChromePhp::log("Found File: ".$file);
-        $zip->addFile($file);
+        $zip->addFile($file, substr($file, $substring_length));
     }
 }
 
