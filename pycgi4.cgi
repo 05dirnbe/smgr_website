@@ -3,7 +3,6 @@
 use warnings;
 use strict;
 use CGI;
-use CGI ':standard';
 use Archive::Zip qw(:ERROR_CODES :CONSTANTS);
 use File::Spec;
 use File::Spec 'rel2abs';
@@ -44,23 +43,21 @@ foreach my $f (@path_array) {
     my $user_path = param($f);
     my $absolute  = rel2abs($user_path, $ROOT);
 
-    if ($absolute =~ /^\Q$ROOT/) {
-   # $absolute is probably within $ROOT, so process it
-        if (open(INF, "< $absolute")) {
-      # it's here, do whatever
-        } else {
-            exit(0);
-        }
-    } else {
-       exit(0);
-    }
+    
+    echo 
     if(-d $f) {
         next;
     }
-    my $path = File::Spec->catdir($root_path, $user_path);
-    my $member = $zip->addFile($path , $user_path);
+    my $path = File::Spec->catdir($root_path, $real_path);
+    my $member = $zip->addFile($path , $real_path);
     $member->desiredCompressionMethod(COMPRESSION_STORED);
 }
+
+
+
+     # perhaps s/^\/+// also
+
+
 
 
 
