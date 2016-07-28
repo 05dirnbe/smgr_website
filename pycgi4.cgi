@@ -71,11 +71,11 @@ foreach my $f (@path_array) {
     if(-d $f) {
         next;
     }
-    if(is_target_within_path($f, $GOOD_ROOT)) {
+    
         my $path = File::Spec->catdir($root_path, $f);
         my $member = $zip->addFile($path , $f);
         $member->desiredCompressionMethod(COMPRESSION_STORED);  
-    }
+    
 }
 
 
