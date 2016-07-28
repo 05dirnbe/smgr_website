@@ -307,21 +307,40 @@ if(isset($_GET['operation'])) {
                       return;
                     }
 					console.log(paths);
+                                                             
+                    window.location.href = "pycgi4.cgi?paths="+paths;
                     
-                    if (!Date.now) {
-                        Date.now = function() { 
-                        return new Date().getTime(); }
-                    }
-                     
-                    var filename = String(Math.floor((Math.random() * 10000) + 1)) + String(Date.now());
-                          
-					$.post(                        
-						"zip_download.php",
+                    /*$.ajax({
+                       //url: "pycgi.cgi",
+                       success: function(response){
+                         console.log("Sucess!");
+                         	var ifrm = document.getElementById("frame1");
+                            ifrm.src = "pycgi.cgi";		
+                       }
+                    });*/
+                    
+                    /*$.ajax({
+                        type: 'POST',
+                        url: "pycgi.cgi",
+                        data: {files:paths}, //passing some input here
+                     });*/
+                                    
+                    /*$.post(                        
+						"pycgi.cgi",
+						{files:paths, filename:filename},
+						function(data, status){                     
+						    var ifrm = document.getElementById("frame1");
+                            ifrm.src = "pycgi.cgi?filename="+filename;						        
+					});*/
+
+
+					/*$.post(                        
+						"test2.py",
 						{files:paths, filename:filename},
 						function(data, status){                       
 						    var ifrm = document.getElementById("frame1");
                             ifrm.src = "download.php?filename="+filename;						        
-					 });
+					 });*/
                                                  
         }
 
@@ -340,25 +359,6 @@ if(isset($_GET['operation'])) {
                 }, 250);
               });;
 
-			$("#download-btn")
-				.click(function(){				
-					var paths = $('#tree').jstree('get_selected');
-
-					var paths = paths.map(function (i){
-					    return 'data/root/' + i;
-					})
-					console.log(paths);
-                     
-                    
-                          
-					$.post(
-						"zip_download.php", 
-						{files:paths},
-						function(data, status){
-						        //alert("Data: " + data + "\nStatus: " + status);						        
-					 });
-                                          
-			})
 			$('#tree')
 				.jstree({     
 					'core' : {
