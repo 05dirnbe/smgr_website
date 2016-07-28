@@ -3,15 +3,42 @@
 use warnings;
 use strict;
 use CGI;
+use Cwd;
+use Cwd 'abs_path';
 use Archive::Zip qw(:ERROR_CODES :CONSTANTS);
 use File::Spec;
-use File::Spec 'rel2abs';
+
+sub is_target_within_path{
+    my ($target,$path) = @_;
+    my $absolute_target = abs_path($target);
+
+    # print "target:", $target, "\n";
+    # print "absolute_target:", $absolute_target, "\n";
+    # print "path:", $path, "\n";
+
+    # check whether the absolute path is a subpath of the allowed path
+    if ($absolute_target =~ /^\Q$path/) {
+       # $absolute_target is probably within $path, so process it
+       if (open(INF, "< $absolute_target")) {
+            # print "it's here, do whatever\n";
+            return 1;
+       } else {
+          # absolute_target is valid, but not found
+          # print "404 not found\n";
+          return 0;
+       }
+    } else {
+       # catch any attempt to manipulate the path
+       # print "ERROR - They've tried to ../ their way out\n";
+       return 0;
+    }
+}
 
 my $query = new CGI;
 
 my $paths = $query->param('paths');
-my $root_path = '/opt/lampp/htdocs/smgr_website//';
-my $ROOT = '/opt/lampp/htdocs/smgr_website/data//' ;  # wherever
+my $root_path = '/root/smgr/smgr_website//';
+my $GOOD_ROOT = "/root/smgr/smgr_website/data";
 
 =comment
 print "Content-Type: text/html\n\n";
@@ -40,25 +67,16 @@ $member->desiredCompressionMethod(COMPRESSION_STORED);
 my $zip = Archive::Zip->new();
 foreach my $f (@path_array) {
     # todo - > security check
-    my $user_path = param($f);
-    my $absolute  = rel2abs($user_path, $ROOT);
-
-    
-    echo 
+    #my $real_path = File::Spec->realpath($f);
     if(-d $f) {
         next;
     }
-    my $path = File::Spec->catdir($root_path, $real_path);
-    my $member = $zip->addFile($path , $real_path);
-    $member->desiredCompressionMethod(COMPRESSION_STORED);
+    if(is_target_within_path($f, $GOOD_ROOT)) {
+        my $path = File::Spec->catdir($root_path, $f);
+        my $member = $zip->addFile($path , $f);
+        $member->desiredCompressionMethod(COMPRESSION_STORED);  
+    }
 }
-
-
-
-     # perhaps s/^\/+// also
-
-
-
 
 
 # output
@@ -70,3 +88,5 @@ print "\n";
 $zip->writeToFileHandle(\*STDOUT);
 
 exit(0);  
+
+
