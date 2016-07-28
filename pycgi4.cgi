@@ -44,14 +44,12 @@ my $GOOD_ROOT = "~/smgr/smgr_website/data";
 #my $GOOD_ROOT = "/opt/lampp/htdocs/smgr_website/data";
 
 
-=comment
 print "Content-Type: text/html\n\n";
 print "
     <TITLE>CGI script ! Python</TITLE>
     <H1>This is my first CGI script</H1>
     Hello, world!";
 print "<p>$paths</p>";
-=cut
 
 my @path_array = split(',', $paths);
 
@@ -65,7 +63,7 @@ foreach my $f (@path_array) {
 my $zip = Archive::Zip->new();
 my $member = $zip->addFile($root_path.'/data/root/jstree.json', 'jstree.json');
 $member->desiredCompressionMethod(COMPRESSION_STORED);
-=cut
+
 
 # build zip
 my $zip = Archive::Zip->new();
@@ -90,7 +88,7 @@ print "Content-Disposition: attachment; filename=download.zip\n";
 print "\n";
 
 $zip->writeToFileHandle(\*STDOUT);
-
+=cut
 exit(0);  
 
 
