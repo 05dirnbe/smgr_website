@@ -37,8 +37,12 @@ sub is_target_within_path{
 my $query = new CGI;
 
 my $paths = $query->param('paths');
-my $root_path = '/root/smgr/smgr_website//';
-my $GOOD_ROOT = "/root/smgr/smgr_website/data";
+my $root_path = '~/smgr/smgr_website//';
+my $GOOD_ROOT = "~/smgr/smgr_website/data";
+
+#my $root_path = '/opt/lampp/htdocs/smgr_website//';
+#my $GOOD_ROOT = "/opt/lampp/htdocs/smgr_website/data";
+
 
 =comment
 print "Content-Type: text/html\n\n";
@@ -71,11 +75,11 @@ foreach my $f (@path_array) {
     if(-d $f) {
         next;
     }
-    
+    if(is_target_within_path($f, $GOOD_ROOT)) {
         my $path = File::Spec->catdir($root_path, $f);
         my $member = $zip->addFile($path , $f);
         $member->desiredCompressionMethod(COMPRESSION_STORED);  
-    
+    }
 }
 
 
