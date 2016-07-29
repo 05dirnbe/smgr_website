@@ -7,6 +7,7 @@ use Cwd;
 use Cwd 'abs_path';
 use Archive::Zip qw(:ERROR_CODES :CONSTANTS);
 use File::Spec;
+use Archive::Zip::SimpleZip qw($SimpleZipError);
 
 sub is_target_within_path{
     my ($target,$path) = @_;
@@ -37,8 +38,10 @@ sub is_target_within_path{
 my $query = new CGI;
 
 my $paths = $query->param('paths');
-my $root_path = '/root/smgr/smgr_website//';
-my $GOOD_ROOT = "/root/smgr/smgr_website/data";
+my $root_path = '/local/smgr.mpi-inf.mpg.de//';
+my $GOOD_ROOT = '/local/smgr.mpi-inf.mpg.de/data';
+my $data_path = '/data/root/';
+my $cut_length = length($data_path) - 1;	
 
 #my $root_path = '/opt/lampp/htdocs/smgr_website//';
 #my $GOOD_ROOT = "/opt/lampp/htdocs/smgr_website/data";
@@ -63,12 +66,29 @@ foreach my $f (@path_array) {
 
 
 my $zip = Archive::Zip->new();
+my $zipData ;
+my $z = new Archive::Zip::SimpleZip '-',
+                        Stream => 1, 
+			Zip64 => 1,
+			Method => ZIP_CM_STORE
+        or die "$SimpleZipError\n" ;
 my $member = $zip->addFile($root_path.'/data/root/jstree.json', 'jstree.json');
 $member->desiredCompressionMethod(COMPRESSION_STORED);
 =cut
 
 # build zip
-my $zip = Archive::Zip->new();
+my $zipData ;
+my $z = new Archive::Zip::SimpleZip '-',
+                        Stream => 1, 
+                        Zip64 => 1
+        or die "$SimpleZipError\n" ;
+# output    
+print "Content-Type: application/x-zip\n";
+print "Content-Disposition: attachment; filename=download.zip\n";
+#header("Content-length: " . strlen($zipcontents) . "\n\n");
+print "\n";
+
+#my $zip = Archive::Zip->new();
 foreach my $f (@path_array) {
     # todo - > security check
     #my $real_path = File::Spec->realpath($f);
@@ -77,20 +97,23 @@ foreach my $f (@path_array) {
     }
     if(is_target_within_path($f, $GOOD_ROOT)) {
         my $path = File::Spec->catdir($root_path, $f);
-        my $member = $zip->addFile($path , $f);
-        $member->desiredCompressionMethod(COMPRESSION_STORED);  
+        $f = substr($f, $cut_length);
+	#my $member = $zip->addFile($path , $f);
+	$z->add($path, Name => $f);
+        #$member->desiredCompressionMethod(COMPRESSION_STORED);  
     }
-}
+} 
+#$z->close(); 
 
 
-# output
-print "Content-Type: application/x-zip\n";
-print "Content-Disposition: attachment; filename=download.zip\n";
-#header("Content-length: " . strlen($zipcontents) . "\n\n");
-print "\n";
+## output
+#print "Content-Type: application/x-zip\n";
+#print "Content-Disposition: attachment; filename=download.zip\n";
+##header("Content-length: " . strlen($zipcontents) . "\n\n");
+#print "\n";
 
-$zip->writeToFileHandle(\*STDOUT);
-
+#$zip->writeToFileHandle(\*STDOUT);
+$z->close();
 exit(0);  
 
 
