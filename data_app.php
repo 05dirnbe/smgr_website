@@ -307,8 +307,11 @@ if(isset($_GET['operation'])) {
                       return;
                     }
 					console.log(paths);
-                                                             
-                    window.location.href = "pycgi4.cgi?paths="+paths;
+                      
+                    var os="";
+                    if (navigator.appVersion.indexOf("Mac")!=-1) os="mac";
+                    
+                    window.location.href = "pycgi4.cgi?paths="+paths+"&os="+os;
                     
                     /*$.ajax({
                        //url: "pycgi.cgi",
