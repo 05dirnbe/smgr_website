@@ -39,11 +39,11 @@
           </li>
 
           <li class="active">
-            <a href="data.php">Data sets</a>
+            <a href="contributors.php">Data sets</a>
           </li>
 
           <li class="active">
-            <a href="contributors.php">Contributors</a>
+            <a href="data.php">Download</a>
           </li>
 
           <li class="active">
