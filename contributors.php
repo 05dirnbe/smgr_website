@@ -36,12 +36,12 @@
 
           <td>001</td>
             <td>
-            <a href="kist_data.html">KIST Europe data set</a>
+            <a href="kist_data.php">KIST Europe data set</a>
             </td>
 
             <td><a href="http://www.kist-europe.de/index.php/de/organization/nano-engineering-group/105-mehlhorn-tim">T. Mehlhorn</a>, <a href="http://mpi-inf.mpg.de/~mtd">M. Dirnberger</a></td>
 
-            <td>coming soon</td>
+            <td>in preparation</td>
 
            <!--  <td>
               <a href="kist_data.html">Details</a>

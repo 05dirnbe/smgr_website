@@ -42,6 +42,10 @@
     <p>We are glad to work together with Mag. Mehlhorn who contributed crucially to this project by
     culturing P. Polycephalum and taking high quality images.</p>
 
+    <h4>The IST team at the MPI</h4>
+
+    <p>We are particularily grateful to Patrick Cernko helping us navigate through the technical challenges posed by setting up a webservice like the SMGR. Whithout him this project probably wouldn't be available for the public right now.</p>
+
     <h4>Prof. Dr. Kurt Mehlhorn</h4>
 
     <p>We are very grateful to be the students of Prof. Mehlhorn. Without his guidance, patience,

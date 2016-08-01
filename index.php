@@ -12,9 +12,7 @@
 
       <h1>The Slime Mold Graph Repository</h1>
 
-      <p>... is coming soon. We are trying to figure out how to make our data sets public, brows-able and download-able in a scalable fashion. Plus, we are looking for a way to make sure this repository can grow.</p>
-
-      At the moment only a small data-set can be downloaded. It is intended to illustrate the current nature and value of this repository. Its contents will be extended from here in a step-by-step fashion. Expect this page and the way our data is presented and organized to change as this repository grows.
+      <p>We present the Slime Mold Graph Repository, a data collection promoting the visibility, accessibility and reuse of experimental data concerned with network-forming slime molds. By making data available across disciplines, the SMGR enables the reproduction of original results as well as novel research.</p>
 
     </div>
 
@@ -36,7 +34,7 @@
         <h2>Data sets<a class="btn btn-lg btn-primary" style="float:right" href="data.html" role=
         "button">Data »</a></h2>
 
-        <p>A list of the datasets currently available in the SMGR.</p>
+        <p>A list of datasets currently available in the SMGR.</p>
       </div>
 
       <div class="col-md-4">

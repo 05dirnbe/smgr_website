@@ -68,11 +68,11 @@
 
     <h1>Kist Europe Data Set</h1>
 
-    <p>Contributed by Tim Mehlhorn of the KIST Europe and Michael Dirnberger of the Max Planck Institute for Informatics.</p>
+    <p>Contributed by Tim Mehlhorn of the Korea Insitute of Technology Europe and Michael Dirnberger of the Max Planck Institute for Informatics.</p>
 
-    <p>The full data set consists of 90 subsets. Each subset consists of a timeseries of approximately 500 images taken in an experiment as described below. Out of the 90 datasets 40 show P. polycephalum developing a well formed network suitable for automatic processing . Only for those 40 sets graphs have been obtained whenever possible observing the limitations of the graph extraction software used. The remaining 50 sets show various other scenarios such as the slime mold reversing growth direction at some point, showing irregular development of the growth front or even escaping the container after some time. This behavior is to be expected even if the experimental environment is kept constant.</p>
+    <p>The full data set consists of 90 subsets. Each subset consittutes a timeseries of a large number of images taken during wet-lab experiments as described below. Out of the 90 datasets 40 show P. polycephalum developing a well formed network suitable for automatic image processing and graph extraction. The remaining 50 sets show various other scenarios such as the slime mold reversing growth direction at some point, showing irregular development of the growth front or even escaping the container after some time. While this data cannot be turned into graphs, it may prove useful in some other context in the future and is thus contained in the KIST data set.</p>
 
-    <p><strong>Note: Due to the size of the full dataset only a small sample is available at the moment. We are working to figure out a way to pack the whole data online and make it down-loadable in digestible portions.</strong></p>
+    <p><strong>Note: Note that the size of the full dataset is approximately 500 GB. Consider using the browsing function to zoom in on folders and download what is interesting to you in smaller chunks.</strong></p>
 
     <h2>Experiments</h2>
 
