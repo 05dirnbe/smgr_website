@@ -363,6 +363,7 @@
                                     </ul>
                                 </div>
                             </div>
+                            </div>
                             <div class="panel panel-default panel-faq">
                                 <div class="panel-heading">
                                     <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-5">
