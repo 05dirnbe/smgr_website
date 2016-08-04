@@ -8,7 +8,7 @@
         var footerHeight = $("footer").height();
         var headerHeight = document.getElementById("header").offsetHeight;
         var viewportHeight = window.innerHeight;
-        var filebrowserHeight = viewportHeight - headerHeight - footerHeight - 5;
+        var filebrowserHeight = viewportHeight - headerHeight - footerHeight - 8 ;
         var filebrowser = document.getElementById("filebrowser");
         filebrowser.style.height = filebrowserHeight + "px";
     });

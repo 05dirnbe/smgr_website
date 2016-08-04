@@ -20,9 +20,6 @@
 </script>
 
 <style>
-    body {
-        padding-top: 30px;
-    }
 
     .faq-cat-content {
         margin-top: 25px;
