@@ -2,7 +2,7 @@
 
 use warnings;
 use strict;
-use CGI;
+use CGI::Fast qw(:standard);
 use Cwd;
 use Cwd 'abs_path';
 use File::Spec;
@@ -10,6 +10,13 @@ use Archive::Zip::SimpleZip qw($SimpleZipError :zip_method);
 use Archive::Tar;
 use File::Slurp;
 
+while (my $query = CGI::Fast->new) {
+#while (my $q = CGI::Fast->new) {
+#    print "Content-type: text/html\n\n";
+#    print "Hello world.\n";
+#}
+
+#exit(0);
 # Check if given $target path is sub path of $path
 sub is_target_within_path{
     my ($target,$path) = @_;
@@ -37,17 +44,25 @@ sub is_target_within_path{
     }
 }
 
-my $query = new CGI;
+#my $query = new CGI;
 
 my $paths = $query->param('paths');
 my $os = $query->param('os');
 my $root_path = '/local/smgr.mpi-inf.mpg.de//';
 my $GOOD_ROOT = '/local/smgr.mpi-inf.mpg.de/data';
 
+
+#print "Content-type: text/html\n\n";
+#print "Hello world.\n";
+#print $os;
+#print $paths;
+#exit(0);
+
 # for local debug purpose
 #my $root_path = '/opt/lampp/htdocs/smgr_website//';
 #my $GOOD_ROOT = '/opt/lampp/htdocs/smgr_website/data';
-#$os = "mac";
+#my $os = "mac";
+#$paths = '/data/root/test';
 
 
 my $data_path = '/data/root/';
@@ -64,14 +79,14 @@ my $t = Archive::Tar->new();
 my $zipData ;
 my $z = new Archive::Zip::SimpleZip '-',
                         Stream => 1, 
-                        Zip64 => 1#,
-                        #Method => ZIP_CM_STORE
+                        Zip64 => 1,
+                        Method => ZIP_CM_STORE
         or die "$SimpleZipError\n" ;
 
 if($os eq "mac") {
 
     print "Content-Type: application/x-tar\n";
-    print "Content-Disposition: attachment; filename=download.tar\n";
+    print "Content-Disposition: attachment; filename=download.tar.gz\n";
     print "\n";
 }
 else {
@@ -94,23 +109,23 @@ foreach my $f (@path_array) {
         $f = substr($f, $cut_length);
         if($os eq "mac") {
             my $data = read_file($path);
-            $t->add_data($f, $data);
+            $t->add_data('download/'.$f, $data);
             #$t->add_files($path, $f);
             #$t->rename($path, 'bla.txt');
         }
         else {
-            $z->add($path, Name => $f);
+            $z->add($path, Name => 'download/'.$f);
         }
     }
 } 
 
 if($os eq "mac") {
-    $t->write(\*STDOUT);
+    $t->write(\*STDOUT, 1);
 }
 else {
     $z->close();
 }
 
-exit(0);  
-
+#exit(0);  
+}
 
