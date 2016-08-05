@@ -226,6 +226,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- using data tab -->
                 <div class="tab-pane fade" id="faq-cat-2">
                     <div class="panel-group" id="accordion-cat-2">
                         <div class="panel panel-default panel-faq">
@@ -239,14 +240,22 @@
                             </div>
                             <div id="faq-cat-1-sub-15" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Simply go to our data set page, browse, select and download. Depending on the size
-                                    of the data you
-                                    want to download and the speed of your Internet connection the required amount of
-                                    patience may vary.
+                                   
+                                <p>Follow these simple steps:</p>
+
+                                <p>
+                                <ol>
+                                  <li> First, check out the <a href="contributors.php">contributors</a> page or to find out what's available and whether there are any license issues to observe.</li>
+                                  <li>use our <a href="data.php">browsing functionality</a> and the tree view of the data to select what you want to download</li>
+                                  <li>Klick the download button and your browser should start the download in a moment.</li>
+                                  <li>Be as patient as your download speed and the size of the selected files require you to be.</li>
+                                </ol>
+                                </p>
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="panel panel-default panel-faq">
+                         <div class="panel panel-default panel-faq">
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-13">
                                     <h4 class="panel-title">
@@ -255,13 +264,43 @@
                                     </h4>
                                 </a>
                             </div>
+                            <div id="faq-cat-1-sub-133" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>At present data sets in the SMGR are not citable entities.
+                                    Please cite the scholarly publication the data set is associated with instead.
+                                    Thus the original contributors are credited. Appropriate information
+                                    can be found on the <a href="contributors.php">contributors</a> page.
+                                    </p> 
+                                    <p>
+                                    In addition to that, you are welcome to cite the SMGR itself in order to give some credit to us. You may use the following BibTex entry:
+                                    </p>
+                                    <pre>
+                                    @article{Dirnberger2016,
+                                    Author = {Dirnberger, M. and Mehlhorn, K. and Mehlhorn, T.},
+                                    Journal = {submitted},
+                                    Title = {Introducing the Slime Mold Graph Repository},
+                                    Year = {2016}
+                                    }</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-faq">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-13">
+                                    <h4 class="panel-title">
+                                        My download is not working. What can I do?
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                                </a>
+                            </div>
                             <div id="faq-cat-1-sub-13" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    At present data sets in the SMGR are not citable entities.
-                                    Please cite the scholarly publication the data set is associated with.
-                                    Thus the original contributors are credited. Appropriate information
-                                    can be found on the contributor’s page. In addition to that, you are welcome to cite
-                                    the SMGR itself to give some credit to us.
+                                    <p>
+                                    For reasons of security our servers are configured such that they serve a limited number of requests (per unit time and IP address) and allow only a small number of simultaneously active downloads. While it is unlikely that the traffic exceeds the threshold values, we recommend to start the download again at a later time. It also helps to break the download into smaller chunks if possible.
+                                    </p>
+                                    <p>
+                                    If the problem still persists after several tries, feel to <a href="contact.php">contact</a> us.
+                                    </p> 
                                 </div>
                             </div>
                         </div>
@@ -269,16 +308,20 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-9">
                                     <h4 class="panel-title">
-                                        Are there any costs associated to sharing via the SMGR?
+                                        Are there any costs associated to using SMGR data?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
                             </div>
                             <div id="faq-cat-1-sub-9" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    No, given the current small size and low maintenance of the SMGR, any fees are
-                                    inappropriate.
-                                    The operation of the SMGR is funded by Kurt Mehlhorn and the MPI for Informatics.
+                                    <p>
+                                    No, given the current small size and low maintenance of the SMGR, fees are
+                                    inappropriate. https://people.mpi-inf.mpg.de/~mehlhorn/
+                                    </p>
+                                    <p>
+                                    The operation of the SMGR is supported and funded by <a href="https://people.mpi-inf.mpg.de/~mehlhorn">Prof. Kurt Mehlhorn</a> and the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>.
+                                    </p>
                                 </div>
                             </div>
                         </div>
