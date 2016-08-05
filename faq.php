@@ -357,7 +357,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
                                     <h4 class="panel-title">
-                                        I am considering a submission, but I am not sure whether my data is <code>&lt;your doubt goes here&gt;</code> enough. What can I do?
+                                        I am considering a submission, but I am not sure whether my data is <code>&lt;insert doubt&gt;</code> enough. What can I do?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>

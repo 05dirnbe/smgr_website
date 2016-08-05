@@ -46,6 +46,10 @@
 
     <p>We are particularily grateful to Patrick Cernko helping us navigate through the technical challenges posed by setting up a webservice like the SMGR. Whithout him this project probably wouldn't be available for the public right now.</p>
 
+    <h4>Our students</h4>
+
+    <p>We thank our students P. Reichert and D. Groß for actively developing this website and configuring the server it runs on.</p>
+
     <h4>Prof. Dr. Kurt Mehlhorn</h4>
 
     <p>We are very grateful to be the students of Prof. Mehlhorn. Without his guidance, patience,
