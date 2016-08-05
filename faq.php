@@ -299,7 +299,7 @@
                                     For reasons of security our servers are configured such that they serve a limited number of requests (per unit time and IP address) and allow only a small number of simultaneously active downloads. While it is unlikely that the traffic exceeds the threshold values, we recommend to start the download again at a later time. It also helps to break the download into smaller chunks if possible.
                                     </p>
                                     <p>
-                                    If the problem still persists after several tries, feel to <a href="contact.php">contact</a> us.
+                                    If the problem still persists after several tries, feel free to <a href="contact.php">contact</a> us.
                                     </p> 
                                 </div>
                             </div>
@@ -327,7 +327,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!-- sharing data tab -->
                 <div class="tab-pane fade" id="faq-cat-3">
                     <div class="panel-group" id="accordion-cat-2">
                         <div class="panel panel-default panel-faq">
@@ -341,14 +341,14 @@
                             </div>
                             <div id="faq-cat-1-sub-2" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Currently the SMGR accepts all data that is concerned with networks formed by slime
-                                    molds.
+                                    <p>
+                                    Currently the SMGR accepts all data that revolves around networks formed by slime
+                                    molds. It is important that data is <b>self-contained</b>, <b>well-documented</b> and of <b>potential</b> interest to others.
+                                    </p>
+                                    <p>
                                     This includes images of slime molds networks and graphs of the same in particular
-                                    but is not limited to them.
-                                    Such data can take various forms and we do not enforce any given file formats as to
-                                    not restrict the flexibility
-                                    of the repository. However, we ask contributors to adhere to the standards of their
-                                    fields.
+                                    but is <b>not strictly limited</b> to them. Such data may take various forms and we do not enforce any given file formats as to not restrict the flexibility of the repository. However, we ask contributors to adhere to the standards of their fields.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -356,19 +356,17 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
                                     <h4 class="panel-title">
-                                        I am considering a submission, but I am not sure whether my data is interesting
-                                        to the SMGR. What can I do?
+                                        I am considering a submission, but I am not sure whether my data is not <pre>&gt; your doubt here &lt;</pre> enough for the SMGR. What can I do?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
                             </div>
                             <div id="faq-cat-1-sub-3" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    If you are in doubt, simply contact us. We can discuss your data and find out
-                                    whether
-                                    it is a good fit for the SMGR. Contacting us early helps us to coordinate and help
-                                    you throughout
-                                    the submission process.
+                                    <p>
+                                    If you are in doubt look at the data that is already in the repository or simply <a href="contact.php">contact</a> us. We can discuss your data and find out whether
+                                    it is a good fit for the SMGR.
+                                    </p>
                                 </div>
                             </div>
                         </div>
