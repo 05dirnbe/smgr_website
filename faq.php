@@ -349,6 +349,7 @@
                                     This includes images of slime molds networks and graphs of the same in particular
                                     but is <b>not strictly limited</b> to them. Such data may take various forms and we do not enforce any given file formats as to not restrict the flexibility of the repository. However, we ask contributors to adhere to the standards of their fields.
                                     </p>
+                                    <p>For some inspiration check out the data currently contained in the repository on the <a href="contributors.php">contributors</a> page.</p>
                                 </div>
                             </div>
                         </div>
@@ -356,7 +357,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
                                     <h4 class="panel-title">
-                                        I am considering a submission, but I am not sure whether my data is not <pre>&gt; your doubt here &lt;</pre> enough for the SMGR. What can I do?
+                                        I am considering a submission, but I am not sure whether my data is not <code>&lt; your doubt goes here&gt;</code> enough for the SMGR. What can I do?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
