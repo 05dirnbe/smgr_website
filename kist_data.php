@@ -47,6 +47,8 @@
     </figure>
     </td>
 
+    </tr>
+    <tr>
 
     <td align="center" valign="center">
     <figure>
@@ -62,6 +64,8 @@
     </figure>
     </td>
 
+    </tr>
+    <tr>
 
     <td align="center" valign="center">
     <figure>
@@ -76,7 +80,7 @@
     <figcaption><strong>Fig.6</strong>: The network within the region of interest has been extracted by NEFI. Note that no filters have been applied. Dead ends and nodes of degree 2 are visible still, leading to small patches of nodes appearing to clump up. Such artifacts can be removed in suitable post-processing steps.</figcaption>
     </figure>
     </td>
-    
+
     </tr>
 
     </table>
