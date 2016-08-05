@@ -18,6 +18,7 @@
         <thead>
           <tr>
             <th>UID</th>
+            <th>Size</th>
             <th>Name</th>
 
             <th>Contributors</th>
@@ -35,6 +36,7 @@
           <tr>
 
           <td>001</td>
+          <td>~ 500 GB</td>
             <td>
             <a href="kist_data.php">KIST Europe data set</a>
             </td>

@@ -52,7 +52,7 @@
 
     <h4>Prof. Dr. Kurt Mehlhorn</h4>
 
-    <p>We are very grateful to be the students of Prof. Mehlhorn. Without his guidance, patience,
+    <p>We are very grateful to be the students of <a href="https://people.mpi-inf.mpg.de/~mehlhorn">Prof. Kurt Mehlhorn</a> at the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>. Without his guidance, patience,
     support as well as the freedom he gives us in realizing our projects, none of this would have
     been possible.</p>
 

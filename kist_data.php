@@ -8,13 +8,31 @@
 
   <div class="container">
   
-    <h1>Kist Europe Data Set</h1>
+    <h1>The KIST Europe data set</h1>
 
-    <p>Contributed by Tim Mehlhorn of the Korea Insitute of Technology Europe and Michael Dirnberger of the Max Planck Institute for Informatics.</p>
+    <h2>Introduction</h2>
 
-    <p>The full data set consists of 90 subsets. Each subset consittutes a timeseries of a large number of images taken during wet-lab experiments as described below. Out of the 90 datasets 40 show P. polycephalum developing a well formed network suitable for automatic image processing and graph extraction. The remaining 50 sets show various other scenarios such as the slime mold reversing growth direction at some point, showing irregular development of the growth front or even escaping the container after some time. While this data cannot be turned into graphs, it may prove useful in some other context in the future and is thus contained in the KIST data set.</p>
+    <p>This dataset was contributed by T. Mehlhorn of the <a href="http://www.kist-europe.de">KIST Europe</a> and <a href="https://people.mpi-inf.mpg.de/~mtd">M. Dirnberger</a> of the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a> for Informatics. It focuses on networks formed by the slime mold <em>Physarum Polycephalum</em>.</p>
 
-    <p><strong>Note: Note that the size of the full dataset is approximately 500 GB. Consider using the browsing function to zoom in on folders and download what is interesting to you in smaller chunks.</strong></p>
+    <p>In the following we present a short description of the KIST Europe data set designed to give the interested reader a high-level understanding of the nature of the contained data. In addition, we recommend to inspect the data directly using <a href="data.php">browsing functionality</a>.The expert reader interested in an in-depth exposition of all materials and methods used is refered to the companion paper of this data set:</p>
+
+    <p>... in preperation</p>>
+
+    <h2>Description</h2>
+
+    <p>The KIST Europe data set contains raw and processed data of 81 identical experiments, carefully executed under constant laboratory conditions. Figure~\ref{fig:setup} illustrates the experimental setup. The data was produced using the following procedure:</p>
+
+    <ul style="list-style-type:disc">
+    <li>A rectangular plastic dish is prepared with a thin sheet of agar.</li>
+    <li>A small amount of dried <em>P. Polycephalum</em> (HU195xHU200) sclerotia crumbs is lined up along the short edge of the dish, see Figure~\ref{fig::sequence_1}. The dish is put into a large light-proof box</li>
+    <li>After approximately 14 hours the plasmodium has resuscitated and starts exploring the available space towards the far side of the dish. Typically, the apical zone needs to cover a distance of several centimeters before network formation can be observed properly, see Figure~\ref{fig::sequence_2}</li>
+    <li>For the next 30 hours we take a top-view image of the growing plasmodium and the changing network every 120 seconds from a fixed position. A typical obtained image is seen in Figure~\ref{fig::sequence_3}. We stop capturing when the apical zone is about to reach the far side of the dish, which is outside of the observed area.</li>
+    <li>After obtaining sequences of images showing the characteristic networks of <em>P. Polycephalum</em>, we use a software called <a href="http://nefi.mpi-inf.mpg.de">NEFI</a> to compute corresponding sequences of graph representations of the depicted structures within a predefined region of interest, see Figure~\ref{fig::sequence_4}. The graphs store precise information of the length and width of the edges as well as the coordinates of the nodes in the plane. A typical resulting unfiltered graph is seen in Figure~\ref{fig::sequence_5}</li>
+    <li>Given the resulting sequence of graphs we apply filters removing artifacts and other unwanted features of the graphs. Then we proceed to compute a novel node tracking, encoding the time development of every node taking into account the changing topology of the evolving graphs.</li>
+    </ul>  
+
+
+    <!-- 
 
     <h2>Experiments</h2>
 
@@ -47,7 +65,7 @@
     <p>Given the post processed graphs, we have obtained the nodes and the euclidean positions in the plane. We exploit this information to compute a node tracking, that is, we assign unique identifies to nodes in the first frame and then compute the identifiers of the nodes in the remaining frames. To do so we construct a linear program which considers all possible assignments of identifiers together with their respective costs. Amongst all possible assignments we choose the one with minimal cost.</p>
 
     <p>Detailed information is in preparation ...</p>
-
+ -->
   <div>
 
     <div class="spacer-huge"/>
