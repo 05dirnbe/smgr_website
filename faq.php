@@ -308,7 +308,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-9">
                                     <h4 class="panel-title">
-                                        Are there any costs associated to using SMGR data?
+                                        Are there any costs associated with using SMGR data?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
@@ -494,12 +494,10 @@
                                 </div>
                                 <div id="faq-cat-1-sub-7" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        At any point in time your data remains your data and you can instruct us to
-                                        remove
-                                        it from the SMGR.
+                                        At any point in time you can instruct us to
+                                        remove your data from the SMGR either temporarily or permanently.
                                         This could be appropriate for example, if something was discovered that renders
-                                        the
-                                        data erroneous.
+                                        the data erroneous.
                                     </div>
                                 </div>
                             </div>
@@ -515,9 +513,7 @@
                                 <div id="faq-cat-1-sub-8" class="panel-collapse collapse">
                                     <div class="panel-body">
                                         The data contained in the SMGR will be integrated in the back-up system of our
-                                        institute.
-                                        Thus, a couple of hard-drives failing will not affect the integrity of the SMGR.
-
+                                        institute. Thus, a couple of hard-drives failing will not affect the integrity of the SMGR.
                                     </div>
                                 </div>
                             </div>
@@ -525,14 +521,20 @@
                                 <div class="panel-heading">
                                     <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-16">
                                         <h4 class="panel-title">
-                                            Are there any costs associated to using data contained in the SMGR?
+                                            Are there any costs associated with sharing data?
                                             <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                         </h4>
                                     </a>
                                 </div>
                                 <div id="faq-cat-1-sub-16" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Due to the small size of the SMGR, there are no costs for its users.
+                                        <p>
+                                        No, given the current small size and low maintenance of the SMGR, fees are
+                                        inappropriate.
+                                        </p>
+                                        <p>
+                                        The operation of the SMGR is supported and funded by <a href="https://people.mpi-inf.mpg.de/~mehlhorn">Prof. Kurt Mehlhorn</a> and the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -540,30 +542,26 @@
                                 <div class="panel-heading">
                                     <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-10">
                                         <h4 class="panel-title">
-                                            Why are there no features such automatic submission system?
+                                            Why is there no automatic submission system?
                                             <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                         </h4>
                                     </a>
                                 </div>
                                 <div id="faq-cat-1-sub-10" class="panel-collapse collapse">
                                     <div class="panel-body">
+                                        <p>
                                         The answer is, that the SMGR as it stands is simply too small to warrant such
-                                        efforts.
-                                        Given the very countable size of the research community interested in slime mold
-                                        networks,
-                                        it is probably foolish to expect a large amount of contributors out of the blue.
-                                        As
-                                        a result,
-                                        the number of datasets will likely not exceed large numbers in the near future.
-                                        Given these
-                                        assumptions, features commonly found in larger repositories, such as automatic
-                                        upload processes,
-                                        are simply overkill at the moment. However, such features may well be added in
-                                        the
-                                        future provided
-                                        appropriate growth of the SMGR and associated community feedback. Even large
-                                        repositories
-                                        have started small.
+                                        efforts. Given the very countable size of the research community interested in slime mold
+                                        networks, it is probably foolish to expect a large amount of contributors out of the blue.
+                                        As a result, the number of datasets will likely not exceed large numbers in the near future.
+                                        </p>
+                                        <p></p>
+                                        Given these assumptions, features commonly found in larger repositories, such as automatic
+                                        upload processes, are simply overkill at the moment. However, they may well be added in
+                                        the future provided appropriate growth of the SMGR and associated community feedback warrant them.
+                                        </p> 
+
+                                        <p>Even large repositories have started small.</p>
                                     </div>
                                 </div>
                             </div>
