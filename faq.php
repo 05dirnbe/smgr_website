@@ -122,22 +122,23 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-12">
                                     <h4 class="panel-title">
-                                        How may SMGR data be reused?
+                                        How may I use SMGR data?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
                             </div>
                             <div id="faq-cat-1-sub-12" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    SMGR data may be reused in any way, provided license agreements and terms of use of
+                                    <p>
+                                    SMGR data may be used in any way, provided license agreements and terms of use of
                                     individual
-                                    data sets are observed. Reuse includes reproduction of known results as well as the
-                                    realization
-                                    of new data analysis approaches evolving previously unexplored research questions.
-                                    When browsing
-                                    data sets also look for documents indicating open research questions suggested by
-                                    the contributors
-                                    of the sets.
+                                    data sets are observed. This includes reproduction of known results as well as the
+                                    novel research evolving previously unexplored research questions.
+                                    </p>
+                                    <p>
+                                    When browsing data sets also look for documents indicating open research questions suggested by
+                                    the contributors of the sets.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -146,17 +147,22 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-14">
                                     <h4 class="panel-title">
-                                        What quality level can I expect of the data?
+                                        What level of quality can I expect of SMGR data?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
                             </div>
                             <div id="faq-cat-1-sub-14" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    <p>
                                     You can expect the data in the SMGR to be of research grade quality.
-                                    All data is part of some scholarly publication and underwent a peer-review process.
+                                    All data is required to be part of some scholarly publication subject to a peer-review process.
                                     We thus trust the involved expert reviewers to ensure that the quality of the data
-                                    is on par with the standards of its field of origin.
+                                    is on par with the standards of its field of origin. In addition to that we will inspect data ourselves upon submission.
+                                    </p>
+                                    <p>
+                                    However, we are not in a position to guarantee that all SMGR data will be perfect always. We still strongly recommend that you carefully inspect any data that you want to use in order to convince yourself of its validity with respect to the intended use.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -166,8 +172,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-17">
                                     <h4 class="panel-title">
-                                        I’d like to follow the development of the SMGR. Can you keep me up to data
-                                        please?
+                                        I’d like to follow the SMGR. Can you keep me up to data?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
@@ -175,8 +180,7 @@
                             <div id="faq-cat-1-sub-17" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     Absolutely! Feel free to subscribe to the SMGR mailing list. We will announce
-                                    updates and
-                                    additions to the SMGR via this <a href="https://lists.mpi-inf.mpg.de/listinfo/smgr">website</a>.
+                                    updates and additions to the SMGR via this <a href="https://lists.mpi-inf.mpg.de/listinfo/smgr">website</a>.
                                 </div>
                             </div>
                         </div>
@@ -184,14 +188,14 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-18">
                                     <h4 class="panel-title">
-                                        My question is not on this list, how can I contact you?
+                                        My question is not on this list, what can I do?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
                             </div>
                             <div id="faq-cat-1-sub-18" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Feel free to contact us <a href="contact.php">here</a>.
+                                    Simply contact us! Feel free to do so <a href="contact.php">here</a>.
                                 </div>
                             </div>
                         </div>
@@ -206,9 +210,15 @@
                             </div>
                             <div id="faq-cat-1-sub-19" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    That’s great there are a couple of things that you can do. Consider sharing data if
-                                    possible
-                                    and tell your colleagues about this repository and its data.
+                                    We are grateful for any support we recieve. There are a couple of things that you could do to contribute:
+
+                                    <ul>
+                                      <li>Consider sharing your data if you have some!</li>
+                                      <li>Consider reusing someone elses data!</li>
+                                      <li>Tell your friends about this repository!</li>
+                                      <li>Link this repository form your webpages!</li>
+                                    </ul> 
+
                                 </div>
                             </div>
                         </div>
