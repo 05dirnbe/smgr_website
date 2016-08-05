@@ -34,7 +34,7 @@
         <h2>Data sets<a class="btn btn-lg btn-primary" style="float:right" href="data.php" role=
         "button">Data »</a></h2>
 
-        <p>A list of datasets currently available in the SMGR.</p>
+        <p>Instantly browse and download the data available.</p>
       </div>
 
       <div class="col-md-4">

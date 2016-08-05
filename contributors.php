@@ -22,8 +22,8 @@
             <th>Name</th>
 
             <th>Contributors</th>
+            <th>Associated publications</th>
 
-            <th>How to cite</th>
             <!-- <th>URL</th> -->
           <!--   <th>Date</th> -->
             <!-- <th>Views</th> -->
@@ -42,8 +42,8 @@
             </td>
 
             <td><a href="http://www.kist-europe.de/index.php/de/organization/nano-engineering-group/105-mehlhorn-tim">T. Mehlhorn</a>, <a href="http://mpi-inf.mpg.de/~mtd">M. Dirnberger</a></td>
-
-            <td>in preparation</td>
+            <td><a href="/documents/kist_data/JoP_D_smgr.pdf">submitted</a>, in preparation</td>
+           
 
            <!--  <td>
               <a href="kist_data.html">Details</a>

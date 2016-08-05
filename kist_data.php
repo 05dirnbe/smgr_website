@@ -12,7 +12,7 @@
 
     <h2>Introduction</h2>
 
-    <p>This data set was contributed by T. Mehlhorn of the <a href="http://www.kist-europe.de">KIST Europe</a> and <a href="https://people.mpi-inf.mpg.de/~mtd">M. Dirnberger</a> of the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>. It focuses on networks formed by the slime mold <em>Physarum Polycephalum</em>.</p>
+    <p>This data set was contributed by <a href="http://www.kist-europe.de/index.php/de/organization/nano-engineering-group/105-mehlhorn-tim">T. Mehlhorn</a> of the <a href="http://www.kist-europe.de">KIST Europe</a> and <a href="https://people.mpi-inf.mpg.de/~mtd">M. Dirnberger</a> of the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>. It focuses on networks formed by the slime mold <em>Physarum Polycephalum</em>.</p>
 
     <p>In the following we present a short description of the KIST Europe data set designed to give the interested reader a high-level understanding of the nature of the contained data. In addition, we recommend to inspect the data directly using the available <a href="data.php">browsing functionality</a>. The expert reader interested in an in-depth exposition of all materials and methods used is referred to the <a href="documents/kist_data/JoP_D_smgr.pdf">companion paper</a> of this data set.</p>
 
@@ -117,7 +117,11 @@
 
     <p>Admittedly, most of the suggestions given so far are inspired by our own interdisciplinary research interests. However, future investigations are hardly limited to them alone. It is fair to say that <b>any</b> observable of relevance defined on a weighted graph can be studied using the KIST Europe set. In particular, we'd like to stress the implications for evaluating and guiding all sorts of theoretical modeling approaches based on graphs. Any model that produces a <b>prediction</b> that can be turned into an observable defined on a graph can immediately be <b>evaluated</b> on the KIST Europe set. This includes time dependent observables. Predictions that agree with the SMGR data increase the trust in a given model, while discrepancies between predictions and data may help suggest improvements. Thus, data contained in the KIST Europe set may be used to drive modeling efforts and help bridge the gap between theory and experiment.</p>
 
-    <p>Finally, we like to stress that the KIST Europe constitutes a <b>flexible basis</b>b to work with since it contains a host of useful code and instructions. In particular, potential users are <b>not</b> limited to working with the graphs that are presently available. They are encouraged to start from the raw images and determine their own specific data selection and graph extraction procedures <b>tailored</b> to their particular research agenda. They may use the tools provided by us or deploy entirely different strategies to better suit their needs.</p>
+    <p>Finally, we like to stress that the KIST Europe constitutes a <b>flexible basis</b> to work with since it contains a host of useful code and instructions. In particular, potential users are <b>not</b> limited to working with the graphs that are presently available. They are encouraged to start from the raw images and determine their own specific data selection and graph extraction procedures <b>tailored</b> to their particular research agenda. They may use the tools provided by us or deploy entirely different strategies to better suit their needs.</p>
+
+    <h2>How to cite</h2>
+
+    ... coming soon.
 
     <div>
 

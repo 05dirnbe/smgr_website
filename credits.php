@@ -44,7 +44,7 @@
 
     <h4>The IST Team at the MPI</h4>
 
-    <p>We are particularily grateful to Patrick Cernko helping us navigate through the technical challenges posed by setting up a webservice like the SMGR. Whithout him this project probably wouldn't be available for the public right now.</p>
+    <p>We are particularily grateful to P. Cernko helping us navigate through the technical challenges posed by setting up a webservice like the SMGR. Whithout him this project probably wouldn't be available for the public right now.</p>
 
     <h4>Our students</h4>
 
