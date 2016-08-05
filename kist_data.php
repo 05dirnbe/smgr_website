@@ -29,6 +29,29 @@
     <li>Given the resulting sequence of graphs we apply filters removing artifacts and other unwanted features of the graphs. Then we proceed to compute a novel node tracking, encoding the time development of every node taking into account the changing topology of the evolving graphs.</li>
     </ul>  
 
+    <table width="500" border="0" cellpadding="5">
+
+    <tr>
+
+    <td align="center" valign="center">
+    
+    <figure>
+    <img src="/images/kist_data/setup.png" alt="" width="304" height="228">
+    <figcaption><strong>Fig.1</strong>: Schematic description of the experimental setup.</figcaption>
+    </figure>
+
+    <td align="center" valign="center">
+   
+    <figure>
+    <img src="/images/kist_data/physarum_sequence_1.JPG" alt="" width="304" height="228">
+    <figcaption><strong>Fig.2</strong>: Crumbs of <em>P. Polycephalum</em> sclerotia forming the inoculation line.</figcaption>
+    </figure>
+
+    </tr>
+
+    </table>
+
+
     <figure>
     <img src="/images/kist_data/setup.png" alt="" width="304" height="228">
     <figcaption><strong>Fig.1</strong>: Schematic description of the experimental setup.</figcaption>
@@ -36,7 +59,7 @@
 
     <figure>
     <img src="/images/kist_data/physarum_sequence_1.JPG" alt="" width="304" height="228">
-    <figcaption><strong>Fig.2</strong>: Crumbs of \emph{P.~polycephalum} sclerotia forming the inoculation line.</figcaption>
+    <figcaption><strong>Fig.2</strong>: Crumbs of <em>P. Polycephalum</em> sclerotia forming the inoculation line.</figcaption>
     </figure>
 
     <figure>
