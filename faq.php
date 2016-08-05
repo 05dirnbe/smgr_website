@@ -172,7 +172,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-17">
                                     <h4 class="panel-title">
-                                        I’d like to follow the SMGR. Can you keep me up to data?
+                                        I’d like to follow the SMGR! Can you keep me up to data?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
@@ -188,7 +188,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-18">
                                     <h4 class="panel-title">
-                                        My question is not on this list, what can I do?
+                                        My question is not on this list. What can I do?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
@@ -203,22 +203,24 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-19">
                                     <h4 class="panel-title">
-                                        I’d like to see the SMGR grow. What can I do to help?
+                                        I’d like to see the SMGR grow! What can I do to help?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
                             </div>
                             <div id="faq-cat-1-sub-19" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    <p>
                                     We are grateful for any support we recieve. There are a couple of things that you could do to contribute:
-
+                                    </p>
+                                    <p>
                                     <ul>
                                       <li>Consider sharing your data if you have some!</li>
                                       <li>Consider reusing someone elses data!</li>
                                       <li>Tell your friends about this repository!</li>
                                       <li>Link this repository form your webpages!</li>
-                                    </ul> 
-
+                                    </ul>
+                                    </p>
                                 </div>
                             </div>
                         </div>
