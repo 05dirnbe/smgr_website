@@ -78,7 +78,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-1">
                                     <h4 class="panel-title">
-                                        Why use the SMGR?
+                                        Why should I share my data via the SMGR?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
@@ -86,11 +86,7 @@
                             <div id="faq-cat-1-sub-1" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     The impact of data sharing as a scientific practice is ever increasing.
-                                    The SMGR seeks to promote data reuse by enabling reproduction of results. It may
-                                    also act as a catalyst for new research efforts. Making your data accessible for
-                                    everyone renders it more visible and potentially increases its impact beyond initial
-                                    publication, possibly beyond its domain of origin. As the impact of your hard-earned
-                                    data grows, your impact grows.
+                                    Making data available for everyone increases visibility of data creators, allows original results to be reproduced and puts data in a prime position to become a catalyst for novel research. Given the significant costs (time and resources) that are typically associated with obtaining high quality data, promoting increased reuse of data is an economical choice. Researchers and other professionals that do not have the required resources/connections to produce/obtain their own data sets benefit in particular from repositories like the SMGR, since it provides immediate and convenient access to experimental material that would be hard to acquire by other means. 
                                 </div>
                             </div>
                         </div>
@@ -107,10 +103,13 @@
                             </div>
                             <div id="faq-cat-1-sub-11" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    In the SMGR you will find data revolving around networks formed by slime molds.
-                                    At present this includes images of such networks and equivalent graph
-                                    representations.
-                                    To get an overview on the data sets available, feel free to browse them here.
+                                    <p>
+                                    In the SMGR you will find data revolving around network-forming slime molds.
+                                    At present this includes images of such networks obtained in controlled wet-lab experiments and equivalent graph representations of said networks.
+                                    </p>
+                                    <p>
+                                    The best way to find out what's in the SMGR is to check out the <a href="contributors.php">contributors</a> page or to skim through the data using our <a href="data.php">browsing functionality</a>.
+                                    </p>
                                 </div>
                             </div>
                         </div>
