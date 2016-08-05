@@ -29,7 +29,7 @@
     <li>Given the resulting sequence of graphs we apply filters removing artifacts and other unwanted features of the graphs. Then we proceed to compute a novel node tracking, encoding the time development of every node taking into account the changing topology of the evolving graphs.</li>
     </ul>  
 
-    <h2> </h2>
+    <h1> </h1>
     
     <table style="width:100%">
 
@@ -37,14 +37,14 @@
 
     <td align="center" valign="center">
     <figure>
-    <img src="/images/kist_data/setup.png" alt="" width="304" height="228">
+    <img src="/images/kist_data/setup.png" alt="" width="400">
     <figcaption><strong>Fig.1</strong>: Schematic description of the experimental setup.</figcaption>
     </figure>
     </td>
 
     <td align="center" valign="center">
     <figure>
-    <img src="/images/kist_data/physarum_sequence_1.JPG" alt="" width="304" height="228">
+    <img src="/images/kist_data/physarum_sequence_1.JPG" alt="" width="400">
     <figcaption><strong>Fig.2</strong>: Crumbs of <em>P. Polycephalum</em> sclerotia forming the inoculation line.</figcaption>
     </figure>
     </td>
@@ -54,14 +54,14 @@
 
     <td align="center" valign="center">
     <figure>
-    <img src="/images/kist_data/physarum_sequence_2.JPG" alt="" width="304" height="228">
+    <img src="/images/kist_data/physarum_sequence_2.JPG" alt="" width="400">
     <figcaption><strong>Fig.3</strong>: The plasmodium explores the dish. The apical zone advances towards the right side of the dish supported by a complex network that is continuously forming.</figcaption>
     </figure>
     </td>
 
     <td align="center" valign="center">
     <figure>
-    <img src="/images/kist_data/physarum_sequence_3.JPG" alt="" width="304" height="228">
+    <img src="/images/kist_data/physarum_sequence_3.JPG" alt="" width="400">
     <figcaption><strong>Fig.4</strong>: As the apical zone is about to escape the observation region, the coarsening of the network becomes more pronounced.</figcaption>
     </figure>
     </td>
@@ -71,14 +71,14 @@
 
     <td align="center" valign="center">
     <figure>
-    <img src="/images/kist_data/physarum_sequence_4.JPG" alt="" width="304" height="228">
+    <img src="/images/kist_data/physarum_sequence_4.JPG" alt="" width="400">
     <figcaption><strong>Fig.5</strong>: The apical zone has moved on, leaving behind a complex network of veins. The dashed rectangle depicts a typical region of interest relevant for subsequent image analysis and graph detection.</figcaption>
     </figure>
     </td>
 
     <td align="center" valign="center">
     <figure>
-    <img src="/images/kist_data/physarum_sequence_5.JPG" alt="" width="304" height="228">
+    <img src="/images/kist_data/physarum_sequence_5.JPG" alt="" width="400">
     <figcaption><strong>Fig.6</strong>: The network within the region of interest has been extracted by NEFI. Note that no filters have been applied. Dead ends and nodes of degree 2 are visible still, leading to small patches of nodes appearing to clump up. Such artifacts can be removed in suitable post-processing steps.</figcaption>
     </figure>
     </td>
@@ -87,37 +87,8 @@
 
     </table>
 
-    <h2> </h2>
-<!-- 
-    <figure>
-    <img src="/images/kist_data/setup.png" alt="" width="304" height="228">
-    <figcaption><strong>Fig.1</strong>: Schematic description of the experimental setup.</figcaption>
-    </figure>
+    <h1> </h1>
 
-    <figure>
-    <img src="/images/kist_data/physarum_sequence_1.JPG" alt="" width="304" height="228">
-    <figcaption><strong>Fig.2</strong>: Crumbs of <em>P. Polycephalum</em> sclerotia forming the inoculation line.</figcaption>
-    </figure> -->
-
-    <!-- <figure>
-    <img src="/images/kist_data/physarum_sequence_2.JPG" alt="" width="304" height="228">
-    <figcaption><strong>Fig.3</strong>: The plasmodium explores the dish. The apical zone advances towards the right side of the dish supported by a complex network that is continuously forming.</figcaption>
-    </figure>
-
-    <figure>
-    <img src="/images/kist_data/physarum_sequence_3.JPG" alt="" width="304" height="228">
-    <figcaption><strong>Fig.4</strong>: As the apical zone is about to escape the observation region, the coarsening of the network becomes more pronounced.</figcaption>
-    </figure> -->
-
-   <!--  <figure>
-    <img src="/images/kist_data/physarum_sequence_4.JPG" alt="" width="304" height="228">
-    <figcaption><strong>Fig.5</strong>: The apical zone has moved on, leaving behind a complex network of veins. The dashed rectangle depicts a typical region of interest relevant for subsequent image analysis and graph detection.</figcaption>
-    </figure>
-
-    <figure>
-    <img src="/images/kist_data/physarum_sequence_5.JPG" alt="" width="304" height="228">
-    <figcaption><strong>Fig.6</strong>: The network within the region of interest has been extracted by NEFI. Note that no filters have been applied. Dead ends and nodes of degree 2 are visible still, leading to small patches of nodes appearing to clump up. Such artifacts can be removed in suitable post-processing steps.</figcaption>
-    </figure> -->
 
     <p>Repeating this experiment we obtain 81 similar sequence of images, which we consider our raw data. We stress at this point that given the inherently uncontrollable growth process of <em>P. Polycephalum</em>, the obtained sequences differ in length and nature. That is to say, in some experiments the organism behaved unfavorably, simply stopping its growth, changing direction or even escaping the container. While such sequences are part of the raw dataset, we excluded them partially or completely from the subsequent graph extraction efforts. The removal of such data reduces the number of series depicting proper network formation to 54.</p>
 
