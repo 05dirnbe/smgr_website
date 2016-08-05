@@ -29,6 +29,7 @@
     <li>Given the resulting sequence of graphs we apply filters removing artifacts and other unwanted features of the graphs. Then we proceed to compute a novel node tracking, encoding the time development of every node taking into account the changing topology of the evolving graphs.</li>
     </ul>  
 
+    <div>
     <table style="width:100%">
 
     <tr>
@@ -84,7 +85,7 @@
     </tr>
 
     </table>
-
+    </div>
 <!-- 
     <figure>
     <img src="/images/kist_data/setup.png" alt="" width="304" height="228">
