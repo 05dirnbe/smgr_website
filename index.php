@@ -24,21 +24,21 @@
     <div class="row">
 
       <div class="col-md-4">
-        <h2>Mission <a class="btn btn-lg btn-primary" style="float:right" href="mission.html"
+        <h2>Mission <a class="btn btn-lg btn-primary" style="float:right" href="mission.php"
         role="button">Mission »</a></h2>
 
         <p>Learn why we are trying to do this.</p>
       </div>
 
       <div class="col-md-4">
-        <h2>Data sets<a class="btn btn-lg btn-primary" style="float:right" href="data.html" role=
+        <h2>Data sets<a class="btn btn-lg btn-primary" style="float:right" href="data.php" role=
         "button">Data »</a></h2>
 
         <p>A list of datasets currently available in the SMGR.</p>
       </div>
 
       <div class="col-md-4">
-        <h2>Contributors<a class="btn btn-lg btn-primary" style="float:right" href="contributors.html"
+        <h2>Contributors<a class="btn btn-lg btn-primary" style="float:right" href="contributors.php"
         role="button">Contributors »</a></h2>
 
         <p>A list of contributing people and organisations.</p>

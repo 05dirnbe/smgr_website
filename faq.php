@@ -85,8 +85,13 @@
                             </div>
                             <div id="faq-cat-1-sub-1" class="panel-collapse collapse">
                                 <div class="panel-body">
+                                    <p>
                                     The impact of data sharing as a scientific practice is ever increasing.
-                                    Making data available for everyone increases visibility of data creators, allows original results to be reproduced and puts data in a prime position to become a catalyst for novel research. Given the significant costs (time and resources) that are typically associated with obtaining high quality data, promoting increased reuse of data is an economical choice. Researchers and other professionals that do not have the required resources/connections to produce/obtain their own data sets benefit in particular from repositories like the SMGR, since it provides immediate and convenient access to experimental material that would be hard to acquire by other means. 
+                                    Making data available for everyone increases visibility of data creators, allows original results to be reproduced and puts data in a prime position to become a catalyst for novel research. Given the significant costs (time and resources) that are typically associated with obtaining high quality data, promoting increased reuse of data is an economical choice. 
+                                    </p>
+                                    <p>
+                                    Researchers and other professionals that do not have the required resources/connections to produce/obtain their own data sets benefit in particular from repositories like the SMGR, since it provides immediate and convenient access to experimental material that would be hard to acquire by other means.
+                                    </p>
                                 </div>
                             </div>
                         </div>
