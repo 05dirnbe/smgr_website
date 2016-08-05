@@ -357,7 +357,7 @@
                             <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-3">
                                     <h4 class="panel-title">
-                                        I am considering a submission, but I am not sure whether my data is not <code>&lt; your doubt goes here&gt;</code> enough for the SMGR. What can I do?
+                                        I am considering a submission, but I am not sure whether my data is <code>&lt;your doubt goes here&gt;</code> enough. What can I do?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                     </h4>
                                 </a>
@@ -365,8 +365,7 @@
                             <div id="faq-cat-1-sub-3" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <p>
-                                    If you are in doubt look at the data that is already in the repository or simply <a href="contact.php">contact</a> us. We can discuss your data and find out whether
-                                    it is a good fit for the SMGR.
+                                    If you are in doubt look at the data which is already in the repository or simply <a href="contact.php">contact</a> us. We are happy to discuss your data and likely find that your doubts were not necessary.
                                     </p>
                                 </div>
                             </div>
@@ -382,39 +381,34 @@
                             </div>
                             <div id="faq-cat-1-sub-4" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p>We aim to encourage reuse of existing data resulting in increased credit for
-                                        original work.
-                                        To facilitate this, it is important that submitted data is well documented and
-                                        in a format the
-                                        community commonly uses. Submitters are encouraged to provide data and
-                                        descriptive information
-                                        such that another researcher would be able to evaluate previous findings based
-                                        on submitted data.
-                                        This includes raw data as well as any data derived from it. In general
-                                        submission should include
-                                        the following:</p>
+                                    <p>
+                                    We aim to encourage <b>reuse</b> of existing data resulting in increased credit for <b>original experimental work</b>. To facilitate this, it is paramount that submitted data be <b>well documented</b> and in a format the targeted community commonly uses.
+                                    </p>
+
+                                    <p>
+                                    Submitters are encouraged to provide <b>data and descriptive information</b>
+                                    such that another researcher would be able to evaluate previous findings based on submitted data. This includes <b>raw data</b> as well as any data derived from it. 
+                                    </p>
+
+
+                                    <p>
+                                    In general any submission should include the following:
+                                    </p>
                                     <ul>
                                         <li>A statement naming the authors, relevant publications the data was used in,
-                                            how-to-cite,
-                                            additional information as well as license agreement if applicable.
+                                            how-to-cite, additional information as well as license agreement if applicable.
                                         </li>
                                         <li>A concise summary of the contents of the set. The scope and relevance of the
-                                            data should become
-                                            clear immediately without reading the details.
+                                            data should become clear immediately without having to dive into the details.
                                         </li>
-                                        <li>A detailed description of the contents of the set. This is aimed at people
-                                            interested
-                                            in the details.
+                                        <li>A detailed description of the contents of the set aimed at experts.
                                         </li>
                                         <li>A detailed description of the materials and methods used produce the set. We
-                                            welcome
-                                            instructions that go beyond your average "Materials and Methods" sections.
+                                            welcome instructions that go beyond your average "Materials and Methods" sections.
                                         </li>
                                         <li>The dataset itself. For bigger datasets consisting of several subsets, a
-                                            structured
-                                            tree-like origination is advised as it will facilitate browsing and
-                                            downloading
-                                            the data lateron.
+                                            structured tree-like organization is advised as it will facilitate browsing and
+                                            downloading using the SMGR facilities.
                                         </li>
                                         <li>Programs and code used to process or analyze the set.</li>
                                         <li>Relevant suggestions of what could be done with the data in the future.</li>
@@ -435,8 +429,7 @@
                                     <div class="panel-body">
                                         We expect submitted data to be part of some peer-reviewed scholarly publication.
                                         We trust that involved expert reviewers make sure that the data was produced
-                                        according
-                                        to relevant standards.
+                                        according to relevant standards.
                                     </div>
                                 </div>
                             </div>
@@ -444,23 +437,29 @@
                                 <div class="panel-heading">
                                     <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-6">
                                         <h4 class="panel-title">
-                                            I have prepared a submission and am ready to submit. What happens next?
+                                            I am ready to submit! What happens next?
                                             <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                         </h4>
                                     </a>
                                 </div>
                                 <div id="faq-cat-1-sub-6" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        Please let us know that you are ready. You will have to decide whether you want
-                                        us
-                                        to host
-                                        your data on our servers, or whether you prefer us to put up a link to your
-                                        server
-                                        hosting the data.
-                                        In the second case it suffices to provide us with the link and some relevant
-                                        descriptive information.
-                                        In the second case we will provide you with a link that enables us to upload you
-                                        data for us to host.
+                                        
+                                        <p>
+                                        For starters, you will have to decide whether you want
+                                        us to host your data on our servers, or whether you prefer to host the data yourself. If so, we will put up a link to your server on our <a href="contributors.php">contributors</a> page.
+                                        </p>
+
+                                        <p>In the second case it suffices on our end to provide us with the URL and some relevant
+                                        descriptive information. Note that data hosted on your servers will not show up in the <a href="data.php">SMGR data browser</a>. Furthermore, you will also have to provide proper download functionality alongside with the data on your webpage.</p>
+
+                                        <p>In the second case we will provide you with an upload-link that enables you to upload you
+                                        data on ours servers. Note that the folder structure of the file you upload will be used in the <a href="data.php">SMGR data browser</a> so please make sure you structured it properly.</p>
+                                        
+                                        <p>
+                                        As soon as you have decided, feel free to <a href="contact.php">contact</a> us and we will take it from there.
+                                        </p>
+
                                     </div>
                                 </div>
                             </div>
@@ -468,21 +467,19 @@
                                 <div class="panel-heading">
                                     <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-20">
                                         <h4 class="panel-title">
-                                            What happens to my data after submission? Do I have to give up control over
-                                            my
-                                            data?
+                                            What happens to my data after submission?
                                             <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
                                         </h4>
                                     </a>
                                 </div>
                                 <div id="faq-cat-1-sub-20" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        After submission we will check whether your data is complete and sufficiently
-                                        documented.
-                                        If this is the case, we will add it to the data sets available via the SMGR
-                                        project
-                                        page.
-                                        People will then be able to browse and download easily from there.
+                                        <p>
+                                        After submission we will verify whether your data contains all the items we expect to receive with a complete submission. If this is the case, we will inspect it and then add it to the available data sets.
+                                        </p>
+                                        <p>
+                                        Should we find the data lacking with regards to our policies, we will ask you to provide an improved version.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
