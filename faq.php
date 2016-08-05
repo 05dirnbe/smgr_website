@@ -211,12 +211,12 @@
                             <div id="faq-cat-1-sub-19" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     <p>
-                                    We are grateful for any support we recieve. There are a couple of things that you could do to contribute:
+                                    We are grateful for any support we receive. There are a couple of things that you could do to contribute:
                                     </p>
                                     <p>
                                     <ul>
                                       <li>Consider sharing your data if you have some!</li>
-                                      <li>Consider reusing someone elses data!</li>
+                                      <li>Consider reusing someone else's data!</li>
                                       <li>Tell your friends about this repository!</li>
                                       <li>Link this repository form your webpages!</li>
                                     </ul>
@@ -247,7 +247,7 @@
                                 <ol>
                                   <li> First, check out the <a href="contributors.php">contributors</a> page or to find out what's available and whether there are any license issues to observe.</li>
                                   <li>use our <a href="data.php">browsing functionality</a> and the tree view of the data to select what you want to download</li>
-                                  <li>Klick the download button and your browser should start the download in a moment.</li>
+                                  <li>Click the download button and your browser should start the download in a moment.</li>
                                   <li>Be as patient as your download speed and the size of the selected files require you to be.</li>
                                 </ol>
                                 </p>
@@ -257,7 +257,7 @@
                         </div>
                          <div class="panel panel-default panel-faq">
                             <div class="panel-heading">
-                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-13">
+                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-133">
                                     <h4 class="panel-title">
                                         How do I cite SMGR data?
                                         <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
@@ -266,7 +266,7 @@
                             </div>
                             <div id="faq-cat-1-sub-133" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    <p>At present data sets in the SMGR are not citable entities.
+                                    <p>At present data sets in the SMGR are not citeable entities.
                                     Please cite the scholarly publication the data set is associated with instead.
                                     Thus the original contributors are credited. Appropriate information
                                     can be found on the <a href="contributors.php">contributors</a> page.
@@ -317,7 +317,7 @@
                                 <div class="panel-body">
                                     <p>
                                     No, given the current small size and low maintenance of the SMGR, fees are
-                                    inappropriate. https://people.mpi-inf.mpg.de/~mehlhorn/
+                                    inappropriate.
                                     </p>
                                     <p>
                                     The operation of the SMGR is supported and funded by <a href="https://people.mpi-inf.mpg.de/~mehlhorn">Prof. Kurt Mehlhorn</a> and the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>.
