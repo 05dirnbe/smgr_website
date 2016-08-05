@@ -12,11 +12,9 @@
 
     <h2>Introduction</h2>
 
-    <p>This dataset was contributed by T. Mehlhorn of the <a href="http://www.kist-europe.de">KIST Europe</a> and <a href="https://people.mpi-inf.mpg.de/~mtd">M. Dirnberger</a> of the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>. It focuses on networks formed by the slime mold <em>Physarum Polycephalum</em>.</p>
+    <p>This data set was contributed by T. Mehlhorn of the <a href="http://www.kist-europe.de">KIST Europe</a> and <a href="https://people.mpi-inf.mpg.de/~mtd">M. Dirnberger</a> of the <a href="http://www.mpi-inf.mpg.de/home/">MPI for Informatics</a>. It focuses on networks formed by the slime mold <em>Physarum Polycephalum</em>.</p>
 
-    <p>In the following we present a short description of the KIST Europe data set designed to give the interested reader a high-level understanding of the nature of the contained data. In addition, we recommend to inspect the data directly using the available <a href="data.php">browsing functionality</a>. The expert reader interested in an in-depth exposition of all materials and methods used is referred to the companion paper of this data set:</p>
-
-    <p><code>in preparation</code></p>
+    <p>In the following we present a short description of the KIST Europe data set designed to give the interested reader a high-level understanding of the nature of the contained data. In addition, we recommend to inspect the data directly using the available <a href="data.php">browsing functionality</a>. The expert reader interested in an in-depth exposition of all materials and methods used is referred to the <a href="documents/kist_data/JoP_D_smgr.pdf">companion paper</a> of this data set.</p>
 
     <h2>Description</h2>
 
@@ -30,6 +28,11 @@
     <li>After obtaining sequences of images showing the characteristic networks of <em>P. Polycephalum</em>, we use a software called <a href="http://nefi.mpi-inf.mpg.de">NEFI</a> to compute corresponding sequences of graph representations of the depicted structures within a predefined region of interest, see Figure~\ref{fig::sequence_4}. The graphs store precise information of the length and width of the edges as well as the coordinates of the nodes in the plane. A typical resulting unfiltered graph is seen in Figure~\ref{fig::sequence_5}</li>
     <li>Given the resulting sequence of graphs we apply filters removing artifacts and other unwanted features of the graphs. Then we proceed to compute a novel node tracking, encoding the time development of every node taking into account the changing topology of the evolving graphs.</li>
     </ul>  
+
+    <figure>
+    <img src="/images/kist_data/physarum_sequence_1.JPG" alt="The Pulpit Rock" width="304" height="228">
+    <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+    </figure>
 
     <p>Repeating this experiment we obtain 81 similar sequence of images, which we consider our raw data. We stress at this point that given the inherently uncontrollable growth process of <em>P. Polycephalum</em>, the obtained sequences differ in length and nature. That is to say, in some experiments the organism behaved unfavorably, simply stopping its growth, changing direction or even escaping the container. While such sequences are part of the raw dataset, we excluded them partially or completely from the subsequent graph extraction efforts. The removal of such data reduces the number of series depicting proper network formation to 54.</p>
 
