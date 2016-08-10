@@ -360,8 +360,7 @@ if (isset($_GET['operation'])) {
             url:       "pycgi4.cgi",
             cache:     false,
             dataType:  "text",
-            data:      { paths: paths, os:os },
-            success:   function(result) { alert(result); }
+            data:      { paths: paths, os:os }
         });
 
 	//$.ajax({
