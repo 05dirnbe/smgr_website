@@ -351,7 +351,7 @@ if (isset($_GET['operation'])) {
         //window.location.href = "pycgi4.cgi?paths=" + paths + "&os=" + os;
 
         $.post("http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi", {paths:paths, os:os}, function(data, status){
-            alert("Data: " + data + "\nStatus: " + status);
+            alert("Data: " + paths + "\nStatus: " + status);
         });
 	//jQuery.get("pycgi4.cgi");
 
