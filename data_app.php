@@ -353,7 +353,7 @@ if (isset($_GET['operation'])) {
 
 
 
-        
+
         /*$.ajax({
          //url: "pycgi.cgi",
          success: function(response){
