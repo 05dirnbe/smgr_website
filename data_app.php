@@ -349,17 +349,20 @@ if (isset($_GET['operation'])) {
 
         //window.location.href = "pycgi4.cgi?paths=" + paths + "&os=" + os;
 
-        //$.post("pycgi4.cgi", {paths:paths, os=os});
+        $.post("pycgi4.cgi", {paths:paths, os:os}, function(data, status){
+            alert("Data: " + data + "\nStatus: " + status);
+        });
+    );
 	//jQuery.get("pycgi4.cgi");
 
-	$.ajax({
-            url: "http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi",
-            type: "POST",
-            data: {paths: 'paths', os: 'os'},
-            success: function(response){
-                    $("#div").html(response);
-                }
-       });
+	//$.ajax({
+    //        url: "http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi",
+    //        type: "POST",
+    //        data: {paths: 'paths', os: 'os'},
+    //        success: function(response){
+    //                $("#div").html(response);
+    //            }
+    //   });
 
         /*$.ajax({
          //url: "pycgi.cgi",
