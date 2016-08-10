@@ -351,6 +351,9 @@ if (isset($_GET['operation'])) {
 
         $.post("pycgi4.cgi", {paths:paths, os=os});
 
+
+
+        
         /*$.ajax({
          //url: "pycgi.cgi",
          success: function(response){
