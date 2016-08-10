@@ -351,10 +351,18 @@ if (isset($_GET['operation'])) {
         // alert(window.location.href);
         //window.location.href = "pycgi4.cgi?paths=" + paths + "&os=" + os;
 
-        $.post("http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi", {paths:paths, os:os}, function(data, status){
-            alert("Data: " + paths + "\nStatus: " + status);
-        });
+        // $.post("http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi", {paths:paths, os:os}, function(data, status){
+        //    alert("Data: " + paths + "\nStatus: " + status);
+        //});
 	//jQuery.get("pycgi4.cgi");
+
+        $.ajax({
+            url:       "pycgi4.cgi",
+            cache:     false,
+            dataType:  "text",
+            data:      { paths: paths, os:os },
+            success:   function(result) { alert(result); }
+        });
 
 	//$.ajax({
     //        url: "http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi",
