@@ -348,10 +348,10 @@ if (isset($_GET['operation'])) {
         var os = "";
         if (navigator.appVersion.indexOf("Mac") != -1) os = "mac";
 
-        alert(window.location.href);
+        // alert(window.location.href);
         //window.location.href = "pycgi4.cgi?paths=" + paths + "&os=" + os;
 
-        $.post("pycgi4.cgdi", {paths:paths, os:os}, function(data, status){
+        $.post("http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi", {paths:paths, os:os}, function(data, status){
             alert("Data: " + paths + "\nStatus: " + status);
         });
 	//jQuery.get("pycgi4.cgi");
