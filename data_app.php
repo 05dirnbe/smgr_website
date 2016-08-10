@@ -355,7 +355,7 @@ if (isset($_GET['operation'])) {
 
 
 	$.ajax({
-            url:       "pycgi4.cgi",
+            url:       "http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi",
             cache:     false,
             dataType:  "text",
             data:      { paths: paths, os:os },
