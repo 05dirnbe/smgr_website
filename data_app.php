@@ -510,12 +510,8 @@ if (isset($_GET['operation'])) {
                 "search": {
                     "case_insensitive": false,
                     "show_only_matches": true
-                },
-                "massload":{
-                    "url":'get/node',
-                    "data": function (nodes) { return ids: nodes.join(',') };
                 }
-                'plugins': ['state', 'dnd', 'sort', 'types', 'unique', 'massload', "checkbox", "search"]
+                'plugins': ['state', 'dnd', 'sort', 'types', 'unique', "checkbox", "search"]
             })
             .on('select_node.jstree', function (e, data) {
 
