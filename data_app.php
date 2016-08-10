@@ -371,6 +371,12 @@ if(isset($_GET['operation'])) {
 								return { 'id' : node.id };
 							}
 						},
+    						'massload' : {
+  		      					'url' : '?operation=get_node',
+        						'data' : function (ids) {
+            							return { 'id' : ids.join(',') };
+        						}
+    						},
 						'check_callback' : function(o, n, p, i, m) {
 							if(m && m.dnd && m.pos !== 'i') { return false; }
 							if(o === "move_node" || o === "copy_node") {
@@ -441,7 +447,7 @@ if(isset($_GET['operation'])) {
 			            "case_insensitive": false,
 			            "show_only_matches" : true
 			        },
-                    'plugins' : ['state','dnd','sort','types','unique', "checkbox", "search"]
+                    'plugins' : ['state','dnd','sort','types','unique', 'checkbox', 'search', 'massload']
 				})
                 .on('delete_node.jstree', function (e, data) {
 					$.get('?operation=delete_node', { 'id' : data.node.id })

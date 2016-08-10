@@ -29,7 +29,7 @@ sub is_target_within_path{
     # check whether the absolute path is a subpath of the allowed path
     if ($absolute_target =~ /^\Q$path/) {
        # $absolute_target is probably within $path, so process it
-       if (open(INF, "< $absolute_target")) {
+       if (open(INF,"< $absolute_target")) {
             # print "it's here, do whatever\n";
             return 1;
        } else {
