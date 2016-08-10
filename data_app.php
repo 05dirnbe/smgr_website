@@ -330,6 +330,11 @@ if (isset($_GET['operation'])) {
 <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
 <script>
 
+   function ajax_info_result(result) {
+    	var text   = "The server says: <b>" + result + "</b>";
+    	$('#info').html(text);
+    }	
+
     function populateIframe(id, path) {
 
         var paths = $('#tree').jstree(true).get_selected(false);
@@ -348,21 +353,33 @@ if (isset($_GET['operation'])) {
         var os = "";
         if (navigator.appVersion.indexOf("Mac") != -1) os = "mac";
 
-        // alert(window.location.href);
-        //window.location.href = "pycgi4.cgi?paths=" + paths + "&os=" + os;
+
+	$.ajax({
+            url:       "pycgi4.cgi",
+            cache:     false,
+            dataType:  "text",
+            data:      { paths: paths, os:os },
+            success:   function(result) { ajax_info_result(result); }
+        });
+
+       // alert(window.location.href);
+       //window.location.href = "pycgi4.cgi?paths=" + paths + "&os=" + os;
 
         // $.post("http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi", {paths:paths, os:os}, function(data, status){
         //    alert("Data: " + paths + "\nStatus: " + status);
         //});
 	//jQuery.get("pycgi4.cgi");
 
-        $.ajax({
-            url:       "pycgi4.cgi",
-            cache:     false,
-            dataType:  "text",
-            data:      { paths: paths, os:os },
-            success:   function(result) { }
-        });
+        //$.ajax({
+        //    url:       "pycgi4.cgi",
+        //    cache:     false,
+        //    dataType:  "text",
+        //    data:      { paths: paths, os:os },
+	//    success:   function(result) { ajax_info_result(result); }
+
+            //success:   function(result) { }
+       // });
+		
 
 	//$.ajax({
     //        url: "http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi",
@@ -510,7 +527,7 @@ if (isset($_GET['operation'])) {
                 "search": {
                     "case_insensitive": false,
                     "show_only_matches": true
-                }
+                },
                 'plugins': ['state', 'dnd', 'sort', 'types', 'unique', "checkbox", "search"]
             })
             .on('select_node.jstree', function (e, data) {

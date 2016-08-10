@@ -12,11 +12,11 @@ use File::Slurp;
 
 while (my $query = CGI::Fast->new) {
 #while (my $q = CGI::Fast->new) {
-#    print "Content-type: text/html\n\n";
-#    print "Hello world.\n";
+    print "Content-type: text/html\n\n";
+    print "Hello world.\n";
 #}
 
-#exit(0);
+exit(0);
 # Check if given $target path is sub path of $path
 sub is_target_within_path{
     my ($target,$path) = @_;
