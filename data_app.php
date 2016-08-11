@@ -349,6 +349,15 @@ if (isset($_GET['operation'])) {
         var os = "";
         if (navigator.appVersion.indexOf("Mac") != -1) os = "mac";
 
+//url:       "http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi",
+//	$.ajax({
+//            url:       "http://newsmgr.mpi-inf.mpg.de/test.cgi",
+//            cache:     false,
+//            dataType:  "text",
+//            data:      { paths: paths, os:os },
+//            success:   function(result) { ajax_info_result(result); }
+//        });
+
 
        // alert(window.location.href);
       // window.location.href = "pycgi4.cgi?paths=" + paths + "&os=" + os;
