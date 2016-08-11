@@ -10,14 +10,6 @@ use Archive::Zip::SimpleZip qw($SimpleZipError :zip_method);
 use Archive::Tar;
 use File::Slurp;
 
-while (my $query = CGI::Fast->new) {
-#while (my $q = CGI::Fast->new) {
-    print "Content-type: text/html\n\n";
-    print "Hello world.\n";
-#}
-
-exit(0);
-# Check if given $target path is sub path of $path
 sub is_target_within_path{
     my ($target,$path) = @_;
     my $absolute_target = abs_path($target);
@@ -44,12 +36,24 @@ sub is_target_within_path{
     }
 }
 
+
+while (my $query = CGI::Fast->new) {
+#while (my $q = CGI::Fast->new) {
+#    print "Content-type: text/html\n\n";
+#    print "Hello world.\n";
+#}
+
+
+#exit(0);
+
 #my $query = new CGI;
 
 my $paths = $query->param('paths');
 my $os = $query->param('os');
 my $root_path = '/local/smgr.mpi-inf.mpg.de//';
 my $GOOD_ROOT = '/local/smgr.mpi-inf.mpg.de/data';
+
+#print $query->header('application/octet-stream');
 
 
 #print "Content-type: text/html\n\n";
