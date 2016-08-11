@@ -43,7 +43,6 @@ while (my $query = CGI::Fast->new) {
 #    print "Hello world.\n";
 #}
 
-
 #exit(0);
 
 #my $query = new CGI;
@@ -60,6 +59,8 @@ my $GOOD_ROOT = '/local/smgr.mpi-inf.mpg.de/data';
 #print "Hello world.\n";
 #print $os;
 #print $paths;
+
+
 #exit(0);
 
 # for local debug purpose
@@ -133,3 +134,5 @@ else {
 #exit(0);  
 }
 
+
+#=cut
