@@ -399,75 +399,80 @@ if (isset($_GET['operation'])) {
                         }
                         return true;
                     },
-                    'force_text': true,
-                    'open_parents': true,
-                    'load_open': true,
-                    'expand_selected_onload': true,
-                    'themes': {
-                        'responsive': false,
-                        'variant': 'small',
-                        'stripes': true
-                    }
-                },
-                'sort': function (a, b) {
-                    return this.get_type(a) === this.get_type(b) ? (this.get_text(a) > this.get_text(b) ? 1 : -1) : (this.get_type(a) >= this.get_type(b) ? 1 : -1);
-                },
-                'contextmenu': {
-                    'items': function (node) {
-                        var tmp = $.jstree.defaults.contextmenu.items();
-                        delete tmp.create.action;
-                        tmp.create.label = "New";
-                        tmp.create.submenu = {
-                            "create_folder": {
-                                "separator_after": true,
-                                "label": "Folder",
-                                "action": function (data) {
-                                    var inst = $.jstree.reference(data.reference),
-                                        obj = inst.get_node(data.reference);
-                                    inst.create_node(obj, {type: "default"}, "last", function (new_node) {
-                                        setTimeout(function () {
-                                            inst.edit(new_node);
-                                        }, 0);
-                                    });
-                                }
-                            },
-                            "create_file": {
-                                "label": "File",
-                                "action": function (data) {
-                                    var inst = $.jstree.reference(data.reference),
-                                        obj = inst.get_node(data.reference);
-                                    inst.create_node(obj, {type: "file"}, "last", function (new_node) {
-                                        setTimeout(function () {
-                                            inst.edit(new_node);
-                                        }, 0);
-                                    });
-                                }
-                            }
-                        };
-                        if (this.get_type(node) === "file") {
-                            delete tmp.create;
+                    "massload": {
+                        "url": '?operation=get_node',
+                        "data": function (nodes) {
+                            return {"ids": nodes.join(",")};}
+                        },
+                        'force_text': true,
+                        'open_parents': true,
+                        'load_open': true,
+                        'expand_selected_onload': true,
+                        'themes': {
+                            'responsive': false,
+                            'variant': 'small',
+                            'stripes': true
                         }
-                        return tmp;
-                    }
-                },
-                'types': {
-                    'default': {'icon': 'folder'},
-                    'file': {'valid_children': [], 'icon': 'file'}
-                },
-                'unique': {
-                    'duplicate': function (name, counter) {
-                        return name + ' ' + counter;
-                    }
-                },
-                'checkbox': {
-                    'whole_node': false
-                },
-                "search": {
-                    "case_insensitive": false,
-                    "show_only_matches": true
-                },
-                'plugins': ["checkbox", "search", "massload"]
-            })
+                    },
+                    'sort': function (a, b) {
+                        return this.get_type(a) === this.get_type(b) ? (this.get_text(a) > this.get_text(b) ? 1 : -1) : (this.get_type(a) >= this.get_type(b) ? 1 : -1);
+                    },
+                    'contextmenu': {
+                        'items': function (node) {
+                            var tmp = $.jstree.defaults.contextmenu.items();
+                            delete tmp.create.action;
+                            tmp.create.label = "New";
+                            tmp.create.submenu = {
+                                "create_folder": {
+                                    "separator_after": true,
+                                    "label": "Folder",
+                                    "action": function (data) {
+                                        var inst = $.jstree.reference(data.reference),
+                                            obj = inst.get_node(data.reference);
+                                        inst.create_node(obj, {type: "default"}, "last", function (new_node) {
+                                            setTimeout(function () {
+                                                inst.edit(new_node);
+                                            }, 0);
+                                        });
+                                    }
+                                },
+                                "create_file": {
+                                    "label": "File",
+                                    "action": function (data) {
+                                        var inst = $.jstree.reference(data.reference),
+                                            obj = inst.get_node(data.reference);
+                                        inst.create_node(obj, {type: "file"}, "last", function (new_node) {
+                                            setTimeout(function () {
+                                                inst.edit(new_node);
+                                            }, 0);
+                                        });
+                                    }
+                                }
+                            };
+                            if (this.get_type(node) === "file") {
+                                delete tmp.create;
+                            }
+                            return tmp;
+                        }
+                    },
+                    'types': {
+                        'default': {'icon': 'folder'},
+                        'file': {'valid_children': [], 'icon': 'file'}
+                    },
+                    'unique': {
+                        'duplicate': function (name, counter) {
+                            return name + ' ' + counter;
+                        }
+                    },
+                    'checkbox': {
+                        'whole_node': false
+                    },
+                    "search": {
+                        "case_insensitive": false,
+                        "show_only_matches": true
+                    },
+                    'plugins': ["checkbox", "search", "massload"]
+                })
             .on('select_node.jstree', function (e, data) {
 
                 data.instance.open_all(data.node);
