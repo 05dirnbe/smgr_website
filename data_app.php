@@ -1,4 +1,3 @@
-
 <?php
 ini_set('open_basedir', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 
@@ -308,10 +307,8 @@ if (isset($_GET['operation'])) {
 </head>
 <body>
 <div style="padding-top:5px; padding-bottom:5px; padding-left:5px;">
-    <!-- <button type="button" class="btn btn-default" id="download-btn" style="display:block; float:left; margin-right:5px;">Download</button> -->
     <input type="text" id="search_input" value="" placeholder="Search" class="input" display:block; padding:4px;
            border-radius:4px; border:1px solid silver;">
-    <!--<input class="form-control search-input" placeholder="Search" name="srch-term" style="width:215px; " type="text"> -->
     <iframe id="frame1" style="display:none"></iframe>
     <a href="javascript:populateIframe('frame1','<?php echo "download.zip"; ?>')">Download Selected Files</a>
 </div>
@@ -329,12 +326,11 @@ if (isset($_GET['operation'])) {
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jstree/3.0.9/jstree.min.js"></script>
-<script>	
+<script>
 
     function populateIframe(id, path) {
 
         var paths = $('#tree').jstree(true).get_selected(false);
-        //var paths = $('#tree').jstree('get_selected');
 
         var paths = paths.map(function (i) {
             return 'data/root/' + i;
@@ -349,53 +345,22 @@ if (isset($_GET['operation'])) {
         var os = "";
         if (navigator.appVersion.indexOf("Mac") != -1) os = "mac";
 
-	var $form=$(document.createElement('form')).css({display:'none'}).attr("method","POST").attr("action","pycgi4.cgi");
-	var $input=$(document.createElement('input')).attr('name','paths').val(paths);
-	var $input2=$(document.createElement('input')).attr('name','os').val(os);
-	$form.append($input).append($input2);
-	$("body").append($form);
-	$form.submit();
+        var $form = $(document.createElement('form')).css({display: 'none'}).attr("method", "POST").attr("action", "pycgi4.cgi");
+        var $input = $(document.createElement('input')).attr('name', 'paths').val(paths);
+        var $input2 = $(document.createElement('input')).attr('name', 'os').val(os);
+        $form.append($input).append($input2);
+        $("body").append($form);
+        $form.submit();
 
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("POST", "pycgi4.cgi", true);
 
-//url:       "http://newsmgr.mpi-inf.mpg.de/pycgi4.cgi",
-//	$.ajax({
-//            url:       "http://newsmgr.mpi-inf.mpg.de/test.cgi",
-//            cache:     false,
-//            dataType:  "text",
-//            data:      { paths: paths, os:os },
-//            success:   function(result) { ajax_info_result(result); }
-//        });
+        xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhttp.onload = function (oEvent) {
+        }
+        xhttp.send("paths=" + paths + "&os" + os);
 
-
-       // alert(window.location.href);
-      //window.location.href = "pycgi4.cgi";//?paths=" + paths + "&os=" + os;
-
-	/*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
-	//var saveAs=saveAs||function(e){"use strict";if(typeof e==="undefined"||typeof navigator!=="undefined"&&/MSIE [1-9]\./.test(navigator.userAgent)){return}var t=e.document,n=function(){return e.URL||e.webkitURL||e},r=t.createElementNS("http://www.w3.org/1999/xhtml","a"),o="download"in r,i=function(e){var t=new MouseEvent("click");e.dispatchEvent(t)},a=/constructor/i.test(e.HTMLElement),f=/CriOS\/[\d]+/.test(navigator.userAgent),u=function(t){(e.setImmediate||e.setTimeout)(function(){throw t},0)},d="application/octet-stream",s=1e3*40,c=function(e){var t=function(){if(typeof e==="string"){n().revokeObjectURL(e)}else{e.remove()}};setTimeout(t,s)},l=function(e,t,n){t=[].concat(t);var r=t.length;while(r--){var o=e["on"+t[r]];if(typeof o==="function"){try{o.call(e,n||e)}catch(i){u(i)}}}},p=function(e){if(/^\s*(?:text\/\S*|application\/xml|\S*\/\S*\+xml)\s*;.*charset\s*=\s*utf-8/i.test(e.type)){return new Blob([String.fromCharCode(65279),e],{type:e.type})}return e},v=function(t,u,s){if(!s){t=p(t)}var v=this,w=t.type,m=w===d,y,h=function(){l(v,"writestart progress write writeend".split(" "))},S=function(){if((f||m&&a)&&e.FileReader){var r=new FileReader;r.onloadend=function(){var t=f?r.result:r.result.replace(/^data:[^;]*;/,"data:attachment/file;");var n=e.open(t,"_blank");if(!n)e.location.href=t;t=undefined;v.readyState=v.DONE;h()};r.readAsDataURL(t);v.readyState=v.INIT;return}if(!y){y=n().createObjectURL(t)}if(m){e.location.href=y}else{var o=e.open(y,"_blank");if(!o){e.location.href=y}}v.readyState=v.DONE;h();c(y)};v.readyState=v.INIT;if(o){y=n().createObjectURL(t);setTimeout(function(){r.href=y;r.download=u;i(r);h();c(y);v.readyState=v.DONE});return}S()},w=v.prototype,m=function(e,t,n){return new v(e,t||e.name||"download",n)};if(typeof navigator!=="undefined"&&navigator.msSaveOrOpenBlob){return function(e,t,n){t=t||e.name||"download";if(!n){e=p(e)}return navigator.msSaveOrOpenBlob(e,t)}}w.abort=function(){};w.readyState=w.INIT=0;w.WRITING=1;w.DONE=2;w.error=w.onwritestart=w.onprogress=w.onwrite=w.onabort=w.onerror=w.onwriteend=null;return m}(typeof self!=="undefined"&&self||typeof window!=="undefined"&&window||this.content);if(typeof module!=="undefined"&&module.exports){module.exports.saveAs=saveAs}else if(typeof define!=="undefined"&&define!==null&&define.amd!==null){define([],function(){return saveAs})}
-  	//var xhttp = new XMLHttpRequest();
-	var xhttp = new XMLHttpRequest();
-  	xhttp.open("POST", "pycgi4.cgi", true);
-	//xhttp.responseType = 'arraybuffer';
-	//xhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
-	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	//xhttp.onreadyState = function() {
-	xhttp.onload = function(oEvent) {
-    		//if (xhttp.readyState == 4 && xhttp.status == 200) 
-     			 //alert(xhttp.responseText);
-    
-        // alert("Failed to download:" + xhr.status + "---" + xhr.statusText);
-			//window.location.href = "pycgi4.cgi";
-			//var byteArray
-        		//var blob = new Blob([xhttp.response], {type: "application/zip"});
-			//alert(xhttp.responseText);
-			//var objectUrl = URL.createObjectURL(blob);
-        		//window.open(objectUrl);
-    		}
-	//}
-  	xhttp.send("paths=" + paths + "&os" + os);
-
-
-  }
+    }
 
     $(function () {
         $(window).resize(function () {
