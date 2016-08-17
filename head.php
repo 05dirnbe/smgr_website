@@ -15,7 +15,8 @@
   <link href="css/sticky_footer.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
   <link href="css/expandy.css" rel="stylesheet">
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery-3.1.0.min"></script>
+  <!--<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
