@@ -1,5 +1,5 @@
 <?php include("head.php"); ?>
-<iframe id="filebrowser" src="data_app.php" height="875px" width="100%" scrolling="no"
+<iframe id="filebrowser" src="http://localhost/smgr_website/data/root/" height="875px" width="100%" scrolling="no"
         marginheight="0px" frameborder="0" style="margin-top:-20px;"></iframe>
 <?php include("footer.php"); ?>
 
