@@ -2,7 +2,8 @@
 
 <html lang="en">
 <?php include('head.php'); ?>
-
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 <body>
 
   <div class="container">
@@ -60,11 +61,11 @@
 
     <h4>h5ai</h4>
 
-    We acknowledge <a href="https://larsjung.de/h5ai/">L. Jung</a> and his excellent <a href="https://github.com/lrsjng/h5ai">h5ai project</a> for providing the core funtionalities of this scientific repository.
-
-    <a class="github-button" href="https://github.com/lrsjng/h5ai" data-icon="octicon-eye" data-style="mega" data-count-href="/lrsjng/h5ai/watchers" data-count-api="/repos/lrsjng/h5ai#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch lrsjng/h5ai on GitHub">Watch</a> 
-
-    <h4>Icons</h4>
+    <p>We acknowledge <a href="https://larsjung.de/h5ai/">L. Jung</a> and his excellent <a href="https://github.com/lrsjng/h5ai">h5ai project</a> for providing the core funtionalities of this scientific repository.</p>
+    <a class="github-button" href="https://github.com/lrsjng/h5ai" data-icon="octicon-eye" data-style="mega" data-count-href="/lrsjng/h5ai/watchers" data-count-api="/repos/lrsjng/h5ai#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch lrsjng/h5ai on GitHub">Watch</a>
+    <a class="github-button" href="https://github.com/lrsjng/h5ai/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/lrsjng/h5ai/network" data-count-api="/repos/lrsjng/h5ai#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork lrsjng/h5ai on GitHub">Fork</a>
+    <a class="github-button" href="https://github.com/lrsjng/h5ai/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/lrsjng/h5ai#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue lrsjng/h5ai on GitHub">Issue</a>
+   <h4>Icons</h4>
     <p>Icons made by Situ Herrera, Appzgear, Freepik, Google from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
   </p>
   </div><!-- /container -->
