@@ -60,7 +60,7 @@
 
     <h4>h5ai</h4>
 
-    We acknowledge <a href="">L. Jung</a> and his excellent <a href="">h5ai project</a> for providing the core funtionalities of this scientific repository.
+    We acknowledge <a href="https://larsjung.de/h5ai/">L. Jung</a> and his excellent <a href="https://github.com/lrsjng/h5ai">h5ai project</a> for providing the core funtionalities of this scientific repository.
 
     <a class="github-button" href="https://github.com/lrsjng/h5ai" data-icon="octicon-eye" data-style="mega" data-count-href="/lrsjng/h5ai/watchers" data-count-api="/repos/lrsjng/h5ai#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch lrsjng/h5ai on GitHub">Watch</a> 
 
