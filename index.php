@@ -27,7 +27,7 @@
         <h2>Mission <a class="btn btn-lg btn-primary" style="float:right" href="mission.php"
         role="button">Mission »</a></h2>
 
-        <p>Learn why we are trying to do this.</p>
+        <p>Learn what we are doing.</p>
       </div>
 
       <div class="col-md-4">
