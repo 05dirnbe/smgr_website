@@ -34,14 +34,14 @@
         <h2>Data sets<a class="btn btn-lg btn-primary" style="float:right" href="data.php" role=
         "button">Data »</a></h2>
 
-        <p>Instantly browse and download the data available.</p>
+        <p>Browse and download available data.</p>
       </div>
 
       <div class="col-md-4">
         <h2>Contributors<a class="btn btn-lg btn-primary" style="float:right" href="contributors.php"
         role="button">Contributors »</a></h2>
 
-        <p>A list of contributing people and organisations.</p>
+        <p>People and organisations sharing their data.</p>
       </div>
     </div><!-- row -->
   </div>
