@@ -87,7 +87,7 @@
                                 <div class="panel-body">
                                     <p>
                                     The impact of data sharing as a scientific practice is ever increasing.
-                                    Making data available for everyone increases visibility of data creators, allows original results to be reproduced and puts data in a prime position to become a catalyst for novel research. Given the significant costs (time and resources) that are typically associated with obtaining high quality data, promoting increased reuse of data is an economical choice. 
+                                    Making data available for everyone increases visibility of data creators, allows original results to be reproduced and puts data in a prime position to become a catalyst for novel research. Given the significant costs (time and resources) that are typically associated with obtaining high quality data, promoting increased reuse of data is an economical choice.
                                     </p>
                                     <p>
                                     Researchers and other professionals that do not have the required resources/connections to produce/obtain their own data sets benefit in particular from repositories like the SMGR, since it provides immediate and convenient access to experimental material that would be hard to acquire by other means.
@@ -186,21 +186,6 @@
                         </div>
                         <div class="panel panel-default panel-faq">
                             <div class="panel-heading">
-                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-18">
-                                    <h4 class="panel-title">
-                                        My question is not on this list. What can I do?
-                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
-                                    </h4>
-                                </a>
-                            </div>
-                            <div id="faq-cat-1-sub-18" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    Simply contact us! Feel free to do so <a href="contact.php">here</a>.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default panel-faq">
-                            <div class="panel-heading">
                                 <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-19">
                                     <h4 class="panel-title">
                                         I’d like to see the SMGR grow! What can I do to help?
@@ -224,6 +209,118 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="panel panel-default panel-faq">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-33">
+                                    <h4 class="panel-title">
+                                        What are you using to run the SMGR?
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="faq-cat-1-sub-33" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                    The SMGR is as basic as it gets. We use a standard <a href="https://httpd.apache.org/">Apache webserver</a>
+                                    in combination with a <a href="https://github.com/lrsjng/h5ai">file indexer</a>. Both ingredients we build upon are open source projects.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-faq">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-34">
+                                    <h4 class="panel-title">
+                                        Why is the SMGR so minimalistic?
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="faq-cat-1-sub-34" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>There are several reasons why we decided to keep the SMGR as simple as possible:</p>
+                                    <ul>
+                                      <li>We did not have the resources (i.e. hardware, man-power, time) to afford an implementation with more features.</li>
+                                      <li>We wanted to keep maintenance and future changes under control.</li>
+                                      <li>We wanted to keep the project effort relative to the size of the target audience and its feedback.</li>
+                                    </ul>
+                                    <p>
+                                      Please note, that the fact that the SMGR only offers the most basic features necessary for repository operation,
+                                      does not mean that it cannot grow in the future. However, implementation of additional features must be warranted
+                                      through sufficient community interest.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-faq">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-35">
+                                    <h4 class="panel-title">
+                                        How long will the SMGR be available?
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="faq-cat-1-sub-35" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                    This is a difficult question with many unknowns. What we can say for sure is that the SMGR will be available until August 2019.
+                                    This is the date when the current head of our departments retires. After that one of two things will happen: Either the new head
+                                    keeps the SMGR running or it gets shut down.
+                                    </p>
+                                    <p>
+                                      All we can say now is that it is very likely that the next head is going to keep the SMGR going. In this case the SMGR will be
+                                      available for sure until the servers running it cannot be operated any more. Then it will likely transfer in-house to newer hardware
+                                      and thus continue. Owing to its simplicity maintenance and moving should be relatively easy.
+                                    </p>
+                                    <p>In the unlikely case that the SMGR is forced to stop operation here at the MPI for any reason, all we can do is try to move it out-of-house.
+                                      In this scenario, we will reach out to find researchers in other departments willing and able to adopt it in order to keep it going. Again the
+                                      simplicity of the SMGR will ensure that such a step can be realized without running into great technical difficulties.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-faq">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-36">
+                                    <h4 class="panel-title">
+                                        What happens if the site shuts down?
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="faq-cat-1-sub-36" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <p>
+                                      If the site is temporarily unavailable owing to technical difficulties it is likely that it will be up and running again shortly.
+                                      Note that all data in the SMGR is part of a larger in-house backup system. Thus, a power-cut or some hardware failing will not affect
+                                      long term operation of the SMGR. Furthermore, the technical personnel at the MPI does an excellent job at keeping all services provided
+                                      by the MPI, including the SMGR, healthy and running.
+                                    </p>
+                                    <p>
+  	                                   In case the SMGR is shut down permanently, see
+                                       <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-35">
+                                               How long will the SMGR be available?
+                                       </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default panel-faq">
+                            <div class="panel-heading">
+                                <a data-toggle="collapse" data-parent="#accordion-cat-1" href="#faq-cat-1-sub-18">
+                                    <h4 class="panel-title">
+                                        My question is not on this list. What can I do?
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                                </a>
+                            </div>
+                            <div id="faq-cat-1-sub-18" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Simply contact us! Feel free to do so <a href="contact.php">here</a>.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- using data tab -->
@@ -240,7 +337,7 @@
                             </div>
                             <div id="faq-cat-1-sub-15" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                   
+
                                 <p>Follow these simple steps:</p>
 
                                 <p>
@@ -251,7 +348,7 @@
                                   <li>Be as patient as your download speed and the size of the selected files require you to be.</li>
                                 </ol>
                                 </p>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -270,7 +367,7 @@
                                     Please cite the scholarly publication the data set is associated with instead.
                                     Thus the original contributors are credited. Appropriate information
                                     can be found on the <a href="contributors.php">contributors</a> page.
-                                    </p> 
+                                    </p>
                                     <p>
                                     In addition to that, you are welcome to cite the SMGR itself in order to give some credit to us. You may use the following BibTex entry:
                                     </p>
@@ -300,7 +397,7 @@
                                     </p>
                                     <p>
                                     If the problem still persists after several tries, feel free to <a href="contact.php">contact</a> us.
-                                    </p> 
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +484,7 @@
 
                                     <p>
                                     Submitters are encouraged to provide <b>data and descriptive information</b>
-                                    such that another researcher would be able to evaluate previous findings based on submitted data. This includes <b>raw data</b> as well as any data derived from it. 
+                                    such that another researcher would be able to evaluate previous findings based on submitted data. This includes <b>raw data</b> as well as any data derived from it.
                                     </p>
 
 
@@ -444,7 +541,7 @@
                                 </div>
                                 <div id="faq-cat-1-sub-6" class="panel-collapse collapse">
                                     <div class="panel-body">
-                                        
+
                                         <p>
                                         For starters, you will have to decide whether you want
                                         us to host your data on our servers, or whether you prefer to host the data yourself. If so, we will put up a link to your server on our <a href="contributors.php">contributors</a> page.
@@ -455,7 +552,7 @@
 
                                         <p>In the second case we will provide you with an upload-link that enables you to upload you
                                         data on ours servers. Note that the folder structure of the file you upload will be used in the <a href="data.php">SMGR data browser</a> so please make sure you structured it properly.</p>
-                                        
+
                                         <p>
                                         As soon as you have decided, feel free to <a href="contact.php">contact</a> us and we will take it from there.
                                         </p>
@@ -559,7 +656,7 @@
                                         Given these assumptions, features commonly found in larger repositories, such as automatic
                                         upload processes, are simply overkill at the moment. However, they may well be added in
                                         the future provided appropriate growth of the SMGR and associated community feedback warrant them.
-                                        </p> 
+                                        </p>
 
                                         <p>Even large repositories have started small.</p>
                                     </div>

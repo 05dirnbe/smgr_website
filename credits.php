@@ -65,6 +65,8 @@
     <a class="github-button" href="https://github.com/lrsjng/h5ai" data-icon="octicon-eye" data-style="mega" data-count-href="/lrsjng/h5ai/watchers" data-count-api="/repos/lrsjng/h5ai#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch lrsjng/h5ai on GitHub">Watch</a>
     <a class="github-button" href="https://github.com/lrsjng/h5ai/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/lrsjng/h5ai/network" data-count-api="/repos/lrsjng/h5ai#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork lrsjng/h5ai on GitHub">Fork</a>
     <a class="github-button" href="https://github.com/lrsjng/h5ai/issues" data-icon="octicon-issue-opened" data-style="mega" data-count-api="/repos/lrsjng/h5ai#open_issues_count" data-count-aria-label="# issues on GitHub" aria-label="Issue lrsjng/h5ai on GitHub">Issue</a>
+    <h4>Apache webserver</h4>
+    <p>We rely on the open source <a href="https://httpd.apache.org/">apache webserver</a> project to run the smgr and this web page.</p>
    <h4>Icons</h4>
     <p>Icons made by Situ Herrera, Appzgear, Freepik, Google from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
   </p>
